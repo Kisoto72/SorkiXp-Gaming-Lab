@@ -3,7 +3,7 @@
   src: url(./Minecraft.ttf);
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@
   border: 1px dashed white;
 }
 
-body{
+body {
   background-color: #2d1b33;
   font-family: 'Minecraft', sans-serif;
   display: flex;
@@ -22,19 +22,13 @@ body{
   margin: 0
 }
 
-h1{
-  font-size: 3rem;
-  text-shadow: 5px 5px #000;
-  text-align: center;
-}
-
-.Proyects{
+.Proyects {
   font-size: 2rem;
   text-shadow: 4px 4px #000;
   color: #44C13F;
 }
 
-nav a{
+nav a {
   margin: 10px;
   color: #fff;
   text-decoration: none;
@@ -45,39 +39,120 @@ nav a{
   transition: all 0.2s;
 }
 
-nav{
+nav {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
   gap: 15px;
 }
 
-nav a:hover{
+nav a:hover {
   background-color: #a8a8a8;
   border-color: #fff;
   cursor: pointer;
 }
 
-.header{
+.header {
   text-align: center;
   margin-top: 30px;
 }
 
-h1{
+h1 {
   font-family: 'Minecraft';
-  color: #00FF00;
-  text-shadow: 5px 5px 0px #000;
+  color: royalblue;
+  text-shadow: 0px 5px 0px black;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.6;
 }
 
-.ventana{
+.ventana-inicio {
   background-color: #c6c6c6;
-  border: 2px solid #ffffff;
-  border-right: 2px solid #808080;
-  border-bottom: 2px solid #808080;
-  border-left: solid #ffffffff;
-  padding: 10px;
-  width: 60%;
-  margin: 20px auto;
-  min-height: 300px;
-  padding: 40px;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  border-right: 4px solid #7b7b7b;
+  border-bottom: 4px solid #7b7b7b;
+  max-width: 1000px;
+  min-height: auto;
+  text-align: center;
+}
+
+.ventana-platino {
+  background-color: #c6c6c6;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  border-right: 4px solid #7b7b7b;
+  border-bottom: 4px solid #7b7b7b;
+  max-width: 400px;
+  min-height: auto;
+  text-align: center;
+}
+
+.ventana-juegos {
+  background-color: #c6c6c6;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  border-right: 4px solid #7b7b7b;
+  border-bottom: 4px solid #7b7b7b;
+  max-width: 400px;
+  min-height: auto;
+  text-align: center;
+}
+
+.ventana-proyectos {
+  background-color: #c6c6c6;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  border-right: 4px solid #7b7b7b;
+  border-bottom: 4px solid #7b7b7b;
+  max-width: 400px;
+  min-height: auto;
+  text-align: center;
+}
+
+.info {
+  font-family: sans-serif;
+  color: #626262;
+  text-shadow: 0px 3px 0px #ffffff;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.platino1 {
+  background-color: #c6c6c6;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  border-right: 4px solid #7b7b7b;
+  border-bottom: 4px solid #7b7b7b;
+  max-width: auto;
+  min-height: auto;
+  margin-top: 50px;
+
+}
+
+.resident {
+  text-shadow: 0px 4px 0px #ffffff;
+  font-family: sans-serif;
+  text-align: center;
+  color: #2d1b33;
+}
+
+.platino1-info{
+  font-family: sans-serif;
+  text-shadow: 0px 4px 0px #ffffff;
+  color: #626262;
+}
+
+.img-plantino1{
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #555;
+  margin: 10px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-bottom: 25px;
 }
