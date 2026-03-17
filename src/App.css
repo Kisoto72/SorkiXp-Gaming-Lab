@@ -18,8 +18,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0
+  margin: 0;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 50px;
 }
 
 .Proyects {
@@ -126,10 +128,10 @@ h1 {
   border-left: 4px solid #ffffff;
   border-right: 4px solid #7b7b7b;
   border-bottom: 4px solid #7b7b7b;
-  max-width: auto;
+  max-width: 700px;
   min-height: auto;
   margin-top: 50px;
-
+  padding-bottom: 20px;
 }
 
 .resident {
@@ -139,13 +141,15 @@ h1 {
   color: #2d1b33;
 }
 
-.platino1-info{
+.platino1-info {
   font-family: sans-serif;
-  text-shadow: 0px 4px 0px #ffffff;
-  color: #626262;
+  text-shadow: 0px 4px 0px #eadddd;
+  color: #151515;
+  margin: 5px;
+  text-align: justify;
 }
 
-.img-plantino1{
+.img-plantino1 {
   max-width: 100%;
   height: auto;
   border: 2px solid #555;
@@ -153,6 +157,168 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
   margin-bottom: 25px;
 }
+
+.tabla-platino {
+  width: auto;
+  margin: 15px auto;
+  border-spacing: 10px;
+  font-family: sans-serif;
+}
+
+.datos-platino1 {
+  font-weight: bold;
+  text-align: left;
+  color: #444;
+  width: 40%;
+  padding: 5px;
+}
+
+.datos-platino2 {
+  text-align: right;
+  color: #222;
+  padding: 5px;
+}
+
+.momento-complicado {
+  background: rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #ff4444;
+  padding: 10px 15px;
+  margin: 20px 0;
+  text-align: left;
+  font-family: sans-serif;
+}
+.momento-complicado-miles{
+  background: rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #FFD700;
+  padding: 10px 15px;
+  margin: 20px 0;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+.momento-complicado h4 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.text-moment {
+  color: #000;
+  text-shadow: 0px 4px 0px #eadddd;
+}
+
+.platino2 {
+  background-color: #c6c6c6;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  border-right: 4px solid #7b7b7b;
+  border-bottom: 4px solid #7b7b7b;
+  max-width: 700px;
+  min-height: auto;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.img-platino2 {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #555;
+  margin: 10px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.AssassinsCreedII {
+  text-shadow: 0px 4px 0px #ffffff;
+  font-family: sans-serif;
+  text-align: center;
+  color: #2d1b33;
+}
+
+.platino2-info {
+  font-family: sans-serif;
+  text-shadow: 0px 4px 0px #eadddd;
+  color: #151515;
+  margin: 5px;
+  text-align: justify;
+}
+
+.platino3 {
+  background-color: #c6c6c6;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  border-right: 4px solid #7b7b7b;
+  border-bottom: 4px solid #7b7b7b;
+  max-width: 700px;
+  min-height: auto;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.img-platino3 {
+  max-width: 90%;
+  height: auto;
+  border: 2px solid #555;
+  margin: 10px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.milesmorales {
+  text-shadow: 0px 4px 0px #ffffff;
+  font-family: sans-serif;
+  text-align: center;
+  color: #2d1b33;
+}
+
+.platino3-info {
+  font-family: sans-serif;
+  text-shadow: 0px 4px 0px #eadddd;
+  color: #151515;
+  margin: 5px;
+  text-align: justify;
+}
+
+.platino4 {
+  background-color: #c6c6c6;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  border-right: 4px solid #7b7b7b;
+  border-bottom: 4px solid #7b7b7b;
+  max-width: 700px;
+  min-height: auto;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.spiderman{
+  text-shadow: 0px 4px 0px #ffffff;
+  font-family: sans-serif;
+  text-align: center;
+  color: #2d1b33;
+}
+
+.img-platino4 {
+  max-width: 90%;
+  height: auto;
+  border: 2px solid #555;
+  margin: 10px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.platino4-info{
+  font-family: sans-serif;
+  text-shadow: 0px 4px 0px #eadddd;
+  color: #151515;
+  margin: 5px;
+  text-align: justify;
+}
+

@@ -5,6 +5,9 @@ import './App.css'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import clickSound from './assets/resident-evil-2-inventario.wav';
 import platino1 from './assets/platino1.jpg';
+import platino2 from './assets/platino2.jpeg';
+import platino3 from './assets/platino3.jpg';
+import platino4 from './assets/platino4.jpg';
 const Home = () => <div className='ventana-inicio'> <h2 className='info'>Este es el inicio de mi pagina, en este intento de pagina web hablare sobre mis juegos platinados y los que platinare en un futuro, sobre los juegos que he jugado, los que abandone y porque. Y sobre futuros proyectos que tenga en mente.</h2> </div>;
 const PlatinosPage = () => (<> <div className='ventana-platino'> <h2 className='info'>Aquí hablo de los platinos que he conseguido</h2></div>
   <div className='platino1'>
@@ -13,13 +16,117 @@ const PlatinosPage = () => (<> <div className='ventana-platino'> <h2 className='
     </h2>
     <img className='img-plantino1' src={platino1} alt="PlatinoResidentEvil2" />
     <p className='platino1-info'>
-      El primer platino que hablare sera de resident evil 2 remake... Este es el platino más reciente que obtuve en mi cuenta de PlayStation4. 
-      <br />
-
+      El primer platino que hablare sera de resident evil 2 remake... Este es el platino más reciente que obtuve en mi cuenta de PlayStation4.
+    </p>
+    <br />
+    <table className='tabla-platino'>
+      <tbody>
+        <tr>
+          <td className='datos-platino1'>🎮 Dificultad:</td>
+          <td className='datos-platino2'>4/10</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>⏳ Duracion:</td>
+          <td className='datos-platino2'>40 hrs</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>🕹️ plataforma:</td>
+          <td className='datos-platino2'>PS4</td>
+        </tr>
+      </tbody>
+    </table>
+    <div className='momento-complicado'>
+      <h4>💀 Momento Complicado:</h4>
+      <p className='text-moment'>La parte final del laboratorio en la run de Claire... cuando enfrentas a la fase 3 y 4 de Birkin, la veces que mori con la fase 3... para llegar sin balas a las fase 4.... Lo bueno, es que por esos "errores" pude optener el <strong>rango S</strong> en dificil con 5 segundos para llegar a las 2 horas.</p>
+    </div>
+    <p className='platino1-info'>
+      Honestamente este platino no tenia en mente sacarlo, solo iba a jugar las partidas necesarias para disfrutar del mismo... pero el juego me gusto mucho que le saque su platino sin querer. Al principio fui solo por los trofeos "Complete Vermin Extermination", "Lore Explorer" y "Master of Unlocking" trofeos que son sencillos de conseguir... y despues de ahi, pues la historia se cuenta sola. Despues de eso vinieron los demas logros de terminal el juego en dificl, terminar el juego sin curarse y sin abrir el abul... un platino que me encanto sacar.
     </p>
   </div>
+
+  <div className='platino2'>
+    <h2 className='AssassinsCreedII'>Assassin's Creed II</h2>
+    <img className='img-platino2' src={platino2} alt="PlatinodeAssassin'sCreedII" />
+    <p className='platino2-info'>El siguiente platino es de una leyenda: Assassin's Creed II. Es, sin duda, uno de mis juegos favoritos de toda la vida, en gran parte gracias a que nos dio al legendario Ezio Auditore.</p>
+    <table className='tabla-platino'>
+      <tbody>
+        <tr>
+          <td className='datos-platino1'>🎮 Dificultad:</td>
+          <td className='datos-platino2'>2/10</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>⏳ Duracion:</td>
+          <td className='datos-platino2'>100 hrs</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>🕹️ plataforma:</td>
+          <td className='datos-platino2'>PS4</td>
+        </tr>
+      </tbody>
+    </table>
+    <div className='momento-complicado'>
+      <h4>💀 Momento Complicado:</h4>
+      <p className='text-moment'>Las jodidas 100 plumas... No dire nada más, quien haya platinado este juego... sabra la frustración que son esas plumas.</p>
+    </div>
+    <p className='platino2-info'>
+      A diferencia del Resident Evil 2 Remake, este platino sí estaba en mi lista de deseos desde el día uno, ya que es uno de mis Assassin's Creed favoritos de la historia. Empecé a jugarlo en una <strong>Xbox 360</strong> por un amigo, pero cuando salió la <strong>colección de Ezio en ps4</strong> y vi que estaba en <strong>ps plus</strong>, decidí re-jugarlo una vez más y platinarlo. Mi plan original es platinar la trilogía completa, pero por ahora mi objetivo está pausado por falta de fondos para comprar el juego o pagar la suscripción...
+    </p>
+  </div>
+  <div className='platino3'>
+    <h2 className='milesmorales'>Marvel's Spider-Man: Miles Morales</h2>
+    <img className='img-platino3' src={platino3} alt="Platino de Marvel Spiderman: Miles Morales" />
+    <p className='platino3-info'>El tercer platino de la lista es el <strong>Marvel's Spider-Man: Miles Morales</strong>... Este platino si senti una obligación por haberme platino el primero que salio en <strong>ps4.</strong></p>
+    <table className='tabla-platino'>
+      <tbody>
+        <tr>
+          <td className='datos-platino1'>🎮 Dificultad:</td>
+          <td className='datos-platino2'>2/10</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>⏳ Duracion:</td>
+          <td className='datos-platino2'>60 hrs</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>🕹️ plataforma:</td>
+          <td className='datos-platino2'>PS4</td>
+        </tr>
+      </tbody>
+    </table>
+    <div className='momento-complicado-miles'>
+      <h4>💀 Momento Complicado:</h4>
+      <p className='text-moment'>Al ser un mundo abierto no hay tanta dificultad como tal... pero lo unico "complicado" es volver a jugar otra <strong>partida+</strong>, y pasarte el juego una segunda vez...</p>
+    </div>
+    <p className='platino3-info'>La verdad es que el juego <strong>no me pareció la gran maravilla</strong> a comparación del título anterior, pero fue entretenido. No obstante, <strong>no me divertí tanto como para re-jugarlo una segunda vez</strong>. Debieron haber puesto ese trofeo por separado, como en el juego original.</p>
+  </div>
+
+  <div className='platino4'>
+    <h2 className='spiderman'>Marvel's Spider-Man PS4</h2>
+    <img className='img-platino4' src={platino4} alt="Platino de marvel spiderman ps4" />
+    <p className='platino4-info'>El cuarto platino es el Marvel's Spider-Man PS4 y el ultimo (hasta el momento) de esta plataforma... y fue el primer platino que conseguí en mi vida.</p>
+    <table className='tabla-platino'>
+      <tbody>
+        <tr>
+          <td className='datos-platino1'>🎮 Dificultad:</td>
+          <td className='datos-platino2'>2/10</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>⏳ Duracion:</td>
+          <td className='datos-platino2'>60 hrs</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>🕹️ plataforma:</td>
+          <td className='datos-platino2'>PS4</td>
+        </tr>
+      </tbody>
+    </table>
+    <div className='momento-complicado'>
+      <h4>💀 Momento Complicado:</h4>
+      <p className='text-moment'>No tengo algo complicado en este juego tampoco... pero el hecho de tener todos los <strong>distritos al 100%</strong> era fastidioso... más con los crimines, que era de suerte que te salieran. Y luego que ya completas, te salen a cada rato y ya ni los pelas.</p>
+    </div>
+    <p className='platino4-info'>Este fue el <strong>primer platino que conseguí en mi vida</strong>... compre el juego unos meses después de haber conseguido mi PS4, y me metí una viciada tanto que falte a trabajar una vez por completar uno de los distritos... pero le tengo mucho cariño por lo mismo. Y al ser de mundo abierto y puedes ajustar la dificultad no fue complicado conseguirlo... tengo pensado platinar el <strong>Marvel's Spider-Man 2</strong> pero eso sera cuando consiga la <strong>PS5</strong>... para ahora si tener platinado la trilogia de Spiderman.</p>
+  </div>
 </>);
-const JuegosPage = () => <div className='ventana-juegos'> <h2 className='info'>Juegos que he jugado</h2></div>;
+const JuegosPage = () => (<div className='ventana-juegos'> <h2 className='info'>Juegos que he jugado</h2></div>);
 const ProyectosPage = () => <div className='ventana-proyectos'> <h2 className='info'>Futuros proyectos y en desarrollo</h2></div>;
 const clickAudio = new Audio(clickSound);
 clickAudio.preload = "auto";
