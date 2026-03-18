@@ -8,6 +8,10 @@ import platino1 from './assets/platino1.jpg';
 import platino2 from './assets/platino2.jpeg';
 import platino3 from './assets/platino3.jpg';
 import platino4 from './assets/platino4.jpg';
+import platino5 from './assets/platino5.jpeg';
+import platino6 from './assets/platino6.jpg';
+import platino7 from './assets/platino7.jpg';
+import fama1 from './assets/fama1.jpeg';
 const Home = () => <div className='ventana-inicio'> <h2 className='info'>Este es el inicio de mi pagina, en este intento de pagina web hablare sobre mis juegos platinados y los que platinare en un futuro, sobre los juegos que he jugado, los que abandone y porque. Y sobre futuros proyectos que tenga en mente.</h2> </div>;
 const PlatinosPage = () => (<> <div className='ventana-platino'> <h2 className='info'>Aquí hablo de los platinos que he conseguido</h2></div>
   <div className='platino1'>
@@ -125,8 +129,117 @@ const PlatinosPage = () => (<> <div className='ventana-platino'> <h2 className='
     </div>
     <p className='platino4-info'>Este fue el <strong>primer platino que conseguí en mi vida</strong>... compre el juego unos meses después de haber conseguido mi PS4, y me metí una viciada tanto que falte a trabajar una vez por completar uno de los distritos... pero le tengo mucho cariño por lo mismo. Y al ser de mundo abierto y puedes ajustar la dificultad no fue complicado conseguirlo... tengo pensado platinar el <strong>Marvel's Spider-Man 2</strong> pero eso sera cuando consiga la <strong>PS5</strong>... para ahora si tener platinado la trilogia de Spiderman.</p>
   </div>
+  <div className='platino5'>
+    <h2 className='outlast'>Outlast</h2>
+    <img className='img-platino5' src={platino5} alt="PLatino de outlast en PC" />
+    <p className='platino5-info'>El siguiente platino es en la plataforma de <strong>PC</strong>... para ser más especificos en la plataforma de steam. <strong>Outlast</strong> es una de mis videojuegos favoritos, y puedo decir que es <strong>mi videojuego favorito de terror</strong>... por mucho.</p>
+    <table className='tabla-platino'>
+      <tbody>
+        <tr>
+          <td className='datos-platino1'>🎮 Dificultad:</td>
+          <td className='datos-platino2'>4/10</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>⏳ Duracion:</td>
+          <td className='datos-platino2'>15 hrs</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>🕹️ plataforma:</td>
+          <td className='datos-platino2'>PC</td>
+        </tr>
+      </tbody>
+    </table>
+    <div className='momento-complicado-outlast'>
+      <h4>💀 Momento Complicado:</h4>
+      <p className='text-moment'>Al conocerme el juego de pies a cabeza, completar el modo <strong>Demente</strong> no fue tan difícil como esperaba. Sin embargo, lo que realmente se vuelve <strong>tedioso</strong> es la búsqueda de todos los documentos y grabaciones; es un reto que más que habilidad, requiere una memoria impecable o mucha paciencia.</p>
+    </div>
+    <p className='platino5-info'><strong>Outlast al ser mi videojuego favorito de terror</strong>, me dieron ganas de completar todo al 100%... <strong>incluyendo el DLC</strong>. Hasta lo tengo en las distintas plataformas (PC, Xbox, PS4 y Nintendo Switch)... solo porque me da miedo, si no tambien platinaria el outlast 2, y tengo planes de platinar el Trials pero me falta gente para completar algunos desafios.</p>
+  </div>
+  <div className='platino6'>
+    <h2 className='terroro'>Terroro</h2>
+    <img className='img-platino6' src={platino6} alt="platino de terroro" />
+    <p className='platino6-info'>Este lo saqué simplemente por las risas. Al hacerse viral 'Roro' y salir este juego de terror temático, decidí probarlo. Me dio tanta gracia la premisa que terminé platinándolo solo por el meme.</p>
+    <table className='tabla-platino'>
+      <tbody>
+        <tr>
+          <td className='datos-platino1'>🎮 Dificultad:</td>
+          <td className='datos-platino2'>1/10</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>⏳ Duracion:</td>
+          <td className='datos-platino2'>1:48 hrs</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>🕹️ plataforma:</td>
+          <td className='datos-platino2'>PC</td>
+        </tr>
+      </tbody>
+    </table>
+    <div className='momento-complicado'>
+      <h4>💀 Momento Complicado:</h4>
+      <p className='text-moment'>Al ser un título indie tan básico, fue pan comido obtener todos los logros. Lo único ligeramente 'enredado' fueron un par de puzzles necesarios para ciertos trofeos, pero fuera de eso, es un platino regalado.</p>
+    </div>
+    <p className='platino6-info'>No tengo mucho que decir de este juego, es un juego meme sobre roro cuando estaba de moda... un juego interesante, corto y divertido de platinar.</p>
+  </div>
+  <div className='platino7'>
+    <h2 className='redshift'>RedShift</h2>
+    <img className='img-platino7' src={platino7} alt="Platino de RedShift" />
+    <p className='platino7-info'>Un juego indie que conoci por tiktok... que me llamo la atención por la <strong>atmosfera</strong> y los <strong>graficos low poly</strong>.</p>
+    <table className='tabla-platino'>
+      <tbody>
+        <tr>
+          <td className='datos-platino1'>🎮 Dificultad:</td>
+          <td className='datos-platino2'>1/10</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>⏳ Duracion:</td>
+          <td className='datos-platino2'>40 min</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>🕹️ plataforma:</td>
+          <td className='datos-platino2'>PC</td>
+        </tr>
+      </tbody>
+    </table>
+    <div className='momento-complicado'>
+      <h4>💀 Momento Complicado:</h4>
+      <p className='text-moment'>Al ser un juego corto, obtener todos los logros es bastante directo. El único obstáculo real podría ser la barrera del idioma; si no dominas el inglés, algunos objetivos pueden volverse confusos. Pero fuera de eso, es pan comido.</p>
+    </div>
+    <p className='platino7-info'>Este es el ultimo platino que puedo platicar... es un juego entretenido, un juego indie corto pero que vale mucho la pena. Y lo mejor, esta de forma <strong>gratuita en steam</strong>... recomendado si te gustan los juegos cortos y los <strong>graficos low poly</strong>.</p>
+  </div>
 </>);
-const JuegosPage = () => (<div className='ventana-juegos'> <h2 className='info'>Juegos que he jugado</h2></div>);
+const JuegosPage = () => (<> <div className='ventana-juegos'> <h2 className='info'>Juegos que he jugado</h2></div>
+  <div className='salon-fama-card'>
+    <div className='fila-superior'>
+      <h2 className='persona3'>Persona 3 Reload</h2>
+      <img className='img-fama1' src={fama1} alt="Persona 3 Reload" />
+      <table className='tabla-fama'>
+        <tbody>
+          <tr>
+            <td className='datos-fama1'>Impacto personal:</td>
+            <td className='datos-fama2'>10/10</td>
+          </tr>
+          <tr>
+            <td className='datos-fama1'>Personaje favorito:</td>
+            <td className='datos-fama2'>Makoto Yuki</td>
+          </tr>
+          <tr>
+            <td className='datos-fama1'>Momento inolvidable:</td>
+            <td className='datos-fama2'>La batalla final contra Nyx</td>
+          </tr>
+          <tr>
+            <td className='datos-fama1'>Estado:</td>
+            <td className='datos-fama2'>Completado</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p className='text-fama'>Persona 3 Reload no es un juego más; es una obra que cambió mi perspectiva sobre los RPG por turnos y sobre la vida misma. Antes pensaba que este género era 'malo' o aburrido, hasta que llegó esta joya.
+      <br />
+      Me hizo apreciar más el tiempo y a la gente que me importa. En el juego podemos rebobinar, pero en la realidad cada decisión cuenta y es lo que nos define. No importa si sientes que empiezas solo esta aventura llamada vida; el juego te enseña que siempre hay personas con las que puedes conectar para enfrentar juntos las sombras. Si alguna vez juzgaste los RPG sin probarlos, piénsalo dos veces: a veces, lo que crees 'aburrido' puede cambiarte la vida.
+    </p>
+  </div>
+</>);
 const ProyectosPage = () => <div className='ventana-proyectos'> <h2 className='info'>Futuros proyectos y en desarrollo</h2></div>;
 const clickAudio = new Audio(clickSound);
 clickAudio.preload = "auto";
