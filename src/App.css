@@ -506,7 +506,7 @@ h1 {
 }
 
 .img-fama1{
-  width: 300px;
+  width: 500px;
   height: auto;
   box-shadow: 0 0 20px rgba(0, 150, 255, 0.3);
 }
@@ -552,4 +552,79 @@ h1 {
   padding-top: 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-family: sans-serif;
+}
+
+.salon{
+  font-family: sans-serif;
+  text-align: left;
+  color: #e6db41;
+  text-shadow: 0 0 10px #eadddd;
+  display: block;
+  padding-left: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.blackflag{
+  justify-self: start;
+  text-align: left;
+  width: auto;
+  font-size: 1.8rem;
+  max-width: 200px;
+  margin: 0;
+  font-family: sans-serif;
+  text-shadow: 0 0 10px #0f0f0f;
+  padding-left: 20px;
+}
+
+.datos-fama1-blackflag{
+  font-weight: bold;
+  text-align: left;
+  color: #9a9a9b;
+  width: 40%;
+  padding: 5px;
+}
+
+.datos-fama2-blackflag{
+  text-align: right;
+  color: #151515;
+  padding: 5px;
+}
+
+.img-fama2{
+  width: 600px;
+  height: auto;
+  box-shadow: 0 0 20px rgb(91, 50, 7);
+}
+
+.img-fama3{
+  width: 700px;
+  height: auto;
+  box-shadow: 0 0 20px rgba(67, 4, 13, 0.993);
+}
+
+.titanfall{
+  justify-self: start;
+  text-align: left;
+  width: auto;
+  font-size: 1.8rem;
+  max-width: 200px;
+  margin: 0;
+  font-family: sans-serif;
+  text-shadow: 0 0 10px #5d3610;
+  padding-left: 20px;
+}
+.datos-fama1-titanfall{
+  font-weight: bold;
+  text-align: left;
+  color: #c6c6c6;
+  width: 40%;
+  padding: 5px;
+}
+
+.datos-fama2-titanfall{
+  text-align: right;
+  color: #7a4911;
+  padding: 5px;
 }

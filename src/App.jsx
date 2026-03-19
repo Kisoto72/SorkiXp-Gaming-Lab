@@ -12,6 +12,8 @@ import platino5 from './assets/platino5.jpeg';
 import platino6 from './assets/platino6.jpg';
 import platino7 from './assets/platino7.jpg';
 import fama1 from './assets/fama1.jpeg';
+import fama2 from './assets/fama2.jpg';
+import fama3 from './assets/fama3.jpg';
 const Home = () => <div className='ventana-inicio'> <h2 className='info'>Este es el inicio de mi pagina, en este intento de pagina web hablare sobre mis juegos platinados y los que platinare en un futuro, sobre los juegos que he jugado, los que abandone y porque. Y sobre futuros proyectos que tenga en mente.</h2> </div>;
 const PlatinosPage = () => (<> <div className='ventana-platino'> <h2 className='info'>Aquí hablo de los platinos que he conseguido</h2></div>
   <div className='platino1'>
@@ -209,6 +211,7 @@ const PlatinosPage = () => (<> <div className='ventana-platino'> <h2 className='
   </div>
 </>);
 const JuegosPage = () => (<> <div className='ventana-juegos'> <h2 className='info'>Juegos que he jugado</h2></div>
+<div  className='salon'> <p>Salón de la fama</p> </div>
   <div className='salon-fama-card'>
     <div className='fila-superior'>
       <h2 className='persona3'>Persona 3 Reload</h2>
@@ -237,6 +240,67 @@ const JuegosPage = () => (<> <div className='ventana-juegos'> <h2 className='inf
     <p className='text-fama'>Persona 3 Reload no es un juego más; es una obra que cambió mi perspectiva sobre los RPG por turnos y sobre la vida misma. Antes pensaba que este género era 'malo' o aburrido, hasta que llegó esta joya.
       <br />
       Me hizo apreciar más el tiempo y a la gente que me importa. En el juego podemos rebobinar, pero en la realidad cada decisión cuenta y es lo que nos define. No importa si sientes que empiezas solo esta aventura llamada vida; el juego te enseña que siempre hay personas con las que puedes conectar para enfrentar juntos las sombras. Si alguna vez juzgaste los RPG sin probarlos, piénsalo dos veces: a veces, lo que crees 'aburrido' puede cambiarte la vida.
+    </p>
+  </div>
+  <div className='salon-fama-card'>
+    <div className='fila-superior'>
+      <h2 className='blackflag'>Assassin's Creed IV Black Flag</h2>
+      <img className='img-fama2' src={fama2} alt="" />
+      <table className='tabla-fama'>
+        <tbody>
+          <tr>
+            <td className='datos-fama1-blackflag'>Impacto personal:</td>
+            <td className='datos-fama2-blackflag'>10/10</td>
+          </tr>
+          <tr>
+            <td className='datos-fama1-blackflag'>Personaje favorito:</td>
+            <td className='datos-fama2-blackflag'>Edward Kendway</td>
+          </tr>
+          <tr>
+            <td className='datos-fama1-blackflag'>Momento inolvidable:</td>
+            <td className='datos-fama2-blackflag'>La redención de Edward</td>
+          </tr>
+          <tr>
+            <td className='datos-fama1-blackflag'>Estado:</td>
+            <td className='datos-fama2-blackflag'>Completado</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p className='text-fama'>Assassin's Creed es una saga muy importante para mí; es mi favorita de videojuegos. Cuando salió Assassin's Creed IV: Black Flag no pude jugarlo en su momento. Lo probé gracias a un amigo en Xbox 360, pero solo fue un rato. Fue hasta que lo compré en PS4 cuando por fin pude disfrutarlo como se debía. Incluso quise sacarle el platino, pero no se pudo por el multijugador.
+      <br />
+      Sinceramente, no le veía el sentido a la cuarta entrega y mucho menos al personaje de Edward, pero cuando lo jugué, me di cuenta de por qué muchos lo tienen incluso por encima de Ezio Auditore. Todos hablan de la redención de Arthur Morgan, pero Edward Kenway nos enseña que, si tus errores no se atienden, pueden cobrar facturas muy altas... pero al mismo tiempo, puedes aprender de ellos y cambiar tanto por ti, como por la gente que amas.
+    </p>
+  </div>
+  <div className='salon-fama-card'>
+    <div className='fila-superior'>
+      <h2 className='titanfall'>TitanFall 2</h2>
+      <img className='img-fama3' src={fama3} alt="TitanFall 2" />
+      <table className='tabla-fama'>
+        <tbody>
+          <tr>
+            <td className='datos-fama1-titanfall'>Impacto personal:</td>
+            <td className='datos-fama2-titanfall'>10/10</td>
+          </tr>
+          <tr>
+            <td className='datos-fama1-titanfall'>Personaje favorito:</td>
+            <td className='datos-fama2-titanfall'>BT</td>
+          </tr>
+          <tr>
+            <td className='datos-fama1-titanfall'>Momento inolvidable:</td>
+            <td className='datos-fama2-titanfall'>El sacrificio de BT</td>
+          </tr>
+          <tr>
+            <td className='datos-fama1-titanfall'>Estado:</td>
+            <td className='datos-fama2-titanfall'>Completado</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p className='text-fama'>
+      Titanfall 2 es un juego al que no le tenía mucha esperanza; pensé que sería un Call of Duty más futurista que Black Ops 3 o Infinite Warfare, pero me cerraron la boca con guante blanco.
+      <br />
+      No esperaba encariñarme tanto con un robot como BT. Pensé que sería el típico alivio cómico, pero la relación entre Jack, BT y el jugador se volvió inquebrantable. A veces los humanos somos egoístas y abandonamos a los demás por beneficio propio, pero BT demostró ser más humano que cualquiera: él protegió a Jack aun sabiendo que Jack se quedaría con él hasta el final. BT cumplió el Protocolo 3 hasta el último aliento.
     </p>
   </div>
 </>);
