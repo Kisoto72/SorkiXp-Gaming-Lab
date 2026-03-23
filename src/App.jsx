@@ -11,14 +11,16 @@ import platino4 from './assets/platino4.jpg';
 import platino5 from './assets/platino5.jpeg';
 import platino6 from './assets/platino6.jpg';
 import platino7 from './assets/platino7.jpg';
+import platino8 from './assets/platino8.jpg';
 import fama1 from './assets/fama1.jpeg';
 import fama2 from './assets/fama2.jpg';
 import fama3 from './assets/fama3.jpg';
+import archivo1 from './assets/archivo1.jpg';
 const Home = () => <div className='ventana-inicio'> <h2 className='info'>Este es el inicio de mi pagina, en este intento de pagina web hablare sobre mis juegos platinados y los que platinare en un futuro, sobre los juegos que he jugado, los que abandone y porque. Y sobre futuros proyectos que tenga en mente.</h2> </div>;
 const PlatinosPage = () => (<> <div className='ventana-platino'> <h2 className='info'>Aquí hablo de los platinos que he conseguido</h2></div>
   <div className='platino1'>
     <h2 className='resident'>
-      Platino de Resident Evil 2 Remake
+      Resident Evil 2 Remake
     </h2>
     <img className='img-plantino1' src={platino1} alt="PlatinoResidentEvil2" />
     <p className='platino1-info'>
@@ -209,9 +211,37 @@ const PlatinosPage = () => (<> <div className='ventana-platino'> <h2 className='
     </div>
     <p className='platino7-info'>Este es el ultimo platino que puedo platicar... es un juego entretenido, un juego indie corto pero que vale mucho la pena. Y lo mejor, esta de forma <strong>gratuita en steam</strong>... recomendado si te gustan los juegos cortos y los <strong>graficos low poly</strong>.</p>
   </div>
+  <div className='platino8'>
+    <h2 className='fallen_order'>Star Wars Jedi Fallen Order</h2>
+    <img className='img-platino8' src={platino8} alt="Platino de Star Wars Fallen Order" />
+    <p className='platino8-info'>Este es de otros platinos que no tenia en mente platinar, pero al conseguir uno que otro logro salio solo al igual que el de Resident Evil 2 Remake</p>
+    <table className='tabla-platino'>
+      <tbody>
+        <tr>
+          <td className='datos-platino1'>🎮 Dificultad:</td>
+          <td className='datos-platino2'>4/10</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>⏳ Duracion:</td>
+          <td className='datos-platino2'>40 hrs</td>
+        </tr>
+        <tr>
+          <td className='datos-platino1'>🕹️ plataforma:</td>
+          <td className='datos-platino2'>PS4</td>
+        </tr>
+      </tbody>
+    </table>
+    <div className='momento-complicado'>
+      <h4>💀 Momento Complicado:</h4>
+      <p className='text-moment'>Aunque puedes elegir la dificultad, el juego no deja de ser un <strong>soulslike</strong>; es un constante ensayo y error.  Lo que nunca olvidaré son los logros <strong> 'A Galaxy Far, Far Away' </strong> y <strong> 'Data Disk' </strong>. Especialmente este último en <strong>Kashyyyk</strong>, donde el análisis del 'Shyyyo Bird' se me bugeó: por más que lo intentaba, no me dejaba analizarlo hasta que tuve que investigar en foros y meditar varias veces para que el juego reaccionara. Además, tener el <strong>100% de los mapas es un reto de paciencia</strong>; en Ilum me quedé al 99% por una zona minúscula que me obligó a dar vueltas por todo el planeta hasta encontrarla.</p>
+    </div>
+    <p className='platino8-info'>
+      Al igual que con Resident Evil 2 Remake, este es <strong>otro platino que no tenía planeado</strong>, pero los logros fueron saliendo solos.
+      Lo jugué originalmente en 2022, pero lo abandoné. Al regresar a PS4, tuve que empezar de cero porque había formateado la consola, pero fue lo mejor: <strong>me adapté al parry</strong>, mejoré mi esquive y logré sacar un platino que jamás pensé tener junto a los demás.</p>
+  </div>
 </>);
 const JuegosPage = () => (<> <div className='ventana-juegos'> <h2 className='info'>Juegos que he jugado</h2></div>
-<div  className='salon'> <p>Salón de la fama</p> </div>
+  <div className='salon'> <p>Salón de la fama</p> </div>
   <div className='salon-fama-card'>
     <div className='fila-superior'>
       <h2 className='persona3'>Persona 3 Reload</h2>
@@ -303,6 +333,20 @@ const JuegosPage = () => (<> <div className='ventana-juegos'> <h2 className='inf
       No esperaba encariñarme tanto con un robot como BT. Pensé que sería el típico alivio cómico, pero la relación entre Jack, BT y el jugador se volvió inquebrantable. A veces los humanos somos egoístas y abandonamos a los demás por beneficio propio, pero BT demostró ser más humano que cualquiera: él protegió a Jack aun sabiendo que Jack se quedaría con él hasta el final. BT cumplió el Protocolo 3 hasta el último aliento.
     </p>
   </div>
+  <div className='archivo'><p>Archivos De Partidas</p></div>
+  <div className='archivos'>
+  <div className='fila-archivo'>
+    <img className='img-archivo-mediana' src={archivo1} alt="Dying Light" />
+    <div className='contenido-archivo'>
+      <h2>Dying Light</h2>
+      <p className="stats-archivo">PC | 140 hrs | ⭐ 8/10</p>
+      <p className="descripcion-corta">
+        Sobrevivir en Harran fue una de las mejores experiencias de parkour que he tenido. 
+        La adrenalina de la noche no se compara con nada.
+      </p>
+    </div>
+  </div>
+</div>
 </>);
 const ProyectosPage = () => <div className='ventana-proyectos'> <h2 className='info'>Futuros proyectos y en desarrollo</h2></div>;
 const clickAudio = new Audio(clickSound);

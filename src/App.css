@@ -147,7 +147,7 @@ h1 {
 }
 
 .resident {
-  text-shadow: 0px 4px 0px #ffffff;
+  text-shadow: 0px 0px 10px #212a90;
   font-family: sans-serif;
   text-align: center;
   color: #2d1b33;
@@ -248,7 +248,7 @@ h1 {
 }
 
 .AssassinsCreedII {
-  text-shadow: 0px 4px 0px #ffffff;
+  text-shadow: 0px 0px 10px #c52222;
   font-family: sans-serif;
   text-align: center;
   color: #2d1b33;
@@ -289,7 +289,7 @@ h1 {
 }
 
 .milesmorales {
-  text-shadow: 0px 4px 0px #ffffff;
+  text-shadow: 0px 0px 10px #FFD700;
   font-family: sans-serif;
   text-align: center;
   color: #2d1b33;
@@ -319,7 +319,7 @@ h1 {
 }
 
 .spiderman {
-  text-shadow: 0px 4px 0px #ffffff;
+  text-shadow: 0px 0px 10px #e83232;
   font-family: sans-serif;
   text-align: center;
   color: #2d1b33;
@@ -360,7 +360,7 @@ h1 {
 }
 
 .outlast {
-  text-shadow: 0px 4px 0px #eadddd;
+  text-shadow: 0px 0px 10px #124609;
   font-family: sans-serif;
   text-align: center;
   color: #2d1b33;
@@ -401,7 +401,7 @@ h1 {
 }
 
 .terroro {
-  text-shadow: 0px 4px 0px #eadddd;
+  text-shadow: 0px 0px 10px #e83232;
   font-family: sans-serif;
   text-align: center;
   color: #2d1b33;
@@ -451,7 +451,7 @@ h1 {
 }
 
 .redshift {
-  text-shadow: 0px 4px 0px #eadddd;
+  text-shadow: 0px 0px 10px #e83232;
   font-family: sans-serif;
   text-align: center;
   color: #2d1b33;
@@ -552,6 +552,7 @@ h1 {
   padding-top: 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-family: sans-serif;
+  font-size: 1.1rem;
 }
 
 .salon{
@@ -627,4 +628,98 @@ h1 {
   text-align: right;
   color: #7a4911;
   padding: 5px;
+}
+
+.platino8{
+  background-color: #c6c6c6;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  border-right: 4px solid #7b7b7b;
+  border-bottom: 4px solid #7b7b7b;
+  max-width: 700px;
+  min-height: auto;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.fallen_order{
+  text-shadow: 0px 0px 10px #a94898;
+  font-family: sans-serif;
+  text-align: center;
+  color: #2d1b33;
+}
+
+.img-platino8{
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #555;
+  margin: 10px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.platino8-info{
+  font-family: sans-serif;
+  text-shadow: 0px 4px 0px #eadddd;
+  color: #151515;
+  margin: 5px;
+  text-align: justify;
+}
+
+.archivo{
+  font-family: sans-serif;
+  text-align: center;
+  color: #ff00ff;
+  text-shadow: 0 1px 10px #eadddd;
+  display: block;
+  padding-left: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.fila-archivo {
+  display: flex;
+  align-items: center;
+  background: rgba(45, 45, 45, 0.4);
+  border-left: 6px solid #ff00ff;  
+  margin: 30px auto;
+  padding: 20px;
+  width: 80%;           
+  max-width: 900px;     
+  border-radius: 12px;
+  gap: 25px;            
+}
+
+.img-archivo-mediana {
+  width: 350px;         
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.contenido-archivo h2 {
+  margin: 0;
+  color: #ff00ff;
+  font-size: 1.8rem;
+  font-family: sans-serif;
+}
+
+.stats-archivo {
+  font-family: sans-serif; 
+  color: #eee;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.descripcion-corta {
+  color: #bbb;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  font-family: sans-serif;
 }
