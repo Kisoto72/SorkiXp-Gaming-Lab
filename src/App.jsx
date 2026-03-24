@@ -16,6 +16,12 @@ import fama1 from './assets/fama1.jpeg';
 import fama2 from './assets/fama2.jpg';
 import fama3 from './assets/fama3.jpg';
 import archivo1 from './assets/archivo1.jpg';
+import archivo2 from './assets/archivo2.jpg';
+import archivo3 from './assets/archivo3.jpg';
+import archivo4 from './assets/archivo4.jpg';
+import archivo5 from './assets/archivo5.jpg';
+import archivo6 from './assets/archivo6.jpg';
+import platino from './assets/platino.png';
 const Home = () => <div className='ventana-inicio'> <h2 className='info'>Este es el inicio de mi pagina, en este intento de pagina web hablare sobre mis juegos platinados y los que platinare en un futuro, sobre los juegos que he jugado, los que abandone y porque. Y sobre futuros proyectos que tenga en mente.</h2> </div>;
 const PlatinosPage = () => (<> <div className='ventana-platino'> <h2 className='info'>Aquí hablo de los platinos que he conseguido</h2></div>
   <div className='platino1'>
@@ -335,18 +341,102 @@ const JuegosPage = () => (<> <div className='ventana-juegos'> <h2 className='inf
   </div>
   <div className='archivo'><p>Archivos De Partidas</p></div>
   <div className='archivos'>
+    <div className='fila-archivo'>
+      <img className='img-archivo-mediana' src={archivo1} alt="Dying Light" />
+      <div className='contenido-archivo'>
+        <h2>Dying Light</h2>
+        <p className="stats-archivo">PC | 140 hrs | ⭐ 8/10</p>
+        <p className="descripcion-corta">
+          Sobrevivir en Harran fue una de las mejores experiencias de parkour que he tenido.
+          La adrenalina de la noche no se compara con nada.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div className='archivos'>
+    <div className='fila-archivo'>
+      <img className='img-archivo-mediana' src={archivo2} alt="Slender The arrival" />
+      <div className='contenido-archivo'>
+        <h2>Slender The Arrival</h2>
+        <p className="stats-archivo">PC | 13 hrs | ⭐ 7/10</p>
+        <p className="descripcion-corta">
+          Una experiencia de terror con uno de los mejores iconos del terror para la gente de internet. El modo historia de Slenderman un juego que recomiendo mucho provar; y más con la actualización que obtuvo hace poco.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div className='archivos'>
   <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={archivo1} alt="Dying Light" />
+    <img className='img-archivo-mediana' src={archivo3} alt="the forest" />
     <div className='contenido-archivo'>
-      <h2>Dying Light</h2>
-      <p className="stats-archivo">PC | 140 hrs | ⭐ 8/10</p>
+      <h2>The Forest</h2>
+      <p className="stats-archivo">PC | 65 hrs | ⭐ 7/10</p>
       <p className="descripcion-corta">
-        Sobrevivir en Harran fue una de las mejores experiencias de parkour que he tenido. 
-        La adrenalina de la noche no se compara con nada.
+        Una experiencia de terror, supervivencia y lo más importante divertirse con amigos. Puede que el juego este algo viejo, y tenga una mala optimización pero eso no quita las risas que puedes tener.
       </p>
     </div>
   </div>
-</div>
+  </div>
+  <div className='archivos'>
+  <div className='fila-archivo'>
+    <img className='img-archivo-mediana' src={archivo4} alt="assassins creed" />
+    <div className='contenido-archivo'>
+      <h2>Assassin's Creed Odyssey</h2>
+      <p className="stats-archivo">Xbox | 90 hrs | ⭐ 8/10</p>
+      <p className="descripcion-corta">
+        Tal vez deje mucho que desear como Assassin's Creed; pero el sistema RPG fue mejorado mucho más que su antesesor. Si quieres una experiencia RPG, con diversas habilidades y farmeo de niveles. Es uno de los mejores que puedes probar.
+      </p>
+    </div>
+  </div>
+  </div>
+  <div className='archivos'>
+  <div className='fila-archivo'>
+    <img className='img-archivo-mediana' src={platino8} alt="Star Wars" />
+    <div className='contenido-archivo'>
+      <h2>Star Wars Jedi Fallen Order <img className='platino' src={platino} alt="platino PS" /></h2>
+      <p className="stats-archivo">PS4 | 40 hrs | ⭐ 8.5/10</p>
+      <p className="descripcion-corta">
+        Una de las mejores experiencias de Star Wars. Una aventura tipo SoulsLike, planetas por explorar y diferentes enemigos y jefes que puedes derrotar.
+      </p>
+    </div>
+  </div>
+  </div>
+  <div className='archivos'>
+  <div className='fila-archivo'>
+    <img className='img-archivo-mediana' src={platino1} alt="Resindet Evil" />
+    <div className='contenido-archivo'>
+      <h2>Resident Evil 2 Remake <img className='platino' src={platino} alt="platino PS" /></h2>
+      <p className="stats-archivo">PS4 | 40 hrs | ⭐ 9/10</p>
+      <p className="descripcion-corta">
+        Una de las mejores experiencias del Survival Horror. Un juego que deje abandonado más de una vez; pero que al final me encanto tanto que hasta platino se saco.
+      </p>
+    </div>
+  </div>
+  </div>
+  <div className='archivos'>
+  <div className='fila-archivo'>
+    <img className='img-archivo-mediana' src={archivo5} alt="Borderlands 2" />
+    <div className='contenido-archivo'>
+      <h2>Borderlands 2</h2>
+      <p className="stats-archivo">PC | 50 hrs | ⭐ 8/10</p>
+      <p className="descripcion-corta">
+        Un juego que al igual que RE 2 deje abandonado muchas veces, y casi siempre jugaba con un amigo. Pero después de terminalo y seguir jugando; consiguiendo armas y subiendo de nivel, me empezo a gustar más de lo que esperaba.
+      </p>
+    </div>
+  </div>
+  </div>
+  <div className='archivos'>
+  <div className='fila-archivo'>
+    <img className='img-archivo-mediana' src={archivo6} alt="Doom" />
+    <div className='contenido-archivo'>
+      <h2>DOOM 2016</h2>
+      <p className="stats-archivo">PC | 50 hrs | ⭐ 8/10</p>
+      <p className="descripcion-corta">
+        Un de los mejores shooters regreso para tomar otra vez su trono. Un juego que me llamo la atención la primera que lo vi; el frenetismo que sientes al destruir las hordas de demonios que vienen. Si buscas un juego el cual puedas desquitarte, este es el indicado para ti.
+      </p>
+    </div>
+  </div>
+  </div>
 </>);
 const ProyectosPage = () => <div className='ventana-proyectos'> <h2 className='info'>Futuros proyectos y en desarrollo</h2></div>;
 const clickAudio = new Audio(clickSound);
