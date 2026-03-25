@@ -21,6 +21,14 @@ import archivo3 from './assets/archivo3.jpg';
 import archivo4 from './assets/archivo4.jpg';
 import archivo5 from './assets/archivo5.jpg';
 import archivo6 from './assets/archivo6.jpg';
+import archivo7 from './assets/archivo7.jpg';
+import archivo8 from './assets/archivo8.jpg';
+import archivo9 from './assets/archivo9.jpg';
+import archivo10 from './assets/archivo10.jpg';
+import archivo11 from './assets/archivo11.jpg';
+import archivo12 from './assets/archivo12.jpg';
+import archivo13 from './assets/archivo13.jpg';
+import archivo14 from './assets/archivo14.jpg';
 import platino from './assets/platino.png';
 const Home = () => <div className='ventana-inicio'> <h2 className='info'>Este es el inicio de mi pagina, en este intento de pagina web hablare sobre mis juegos platinados y los que platinare en un futuro, sobre los juegos que he jugado, los que abandone y porque. Y sobre futuros proyectos que tenga en mente.</h2> </div>;
 const PlatinosPage = () => (<> <div className='ventana-platino'> <h2 className='info'>Aquí hablo de los platinos que he conseguido</h2></div>
@@ -437,8 +445,116 @@ const JuegosPage = () => (<> <div className='ventana-juegos'> <h2 className='inf
     </div>
   </div>
   </div>
+  <div className='archivos'>
+  <div className='fila-archivo'>
+    <img className='img-archivo-mediana' src={archivo7} alt="Doom Eternal" />
+    <div className='contenido-archivo'>
+      <h2>DOOM Eternal</h2>
+      <p className="stats-archivo">PC | 70 hrs | ⭐ 9/10</p>
+      <p className="descripcion-corta">
+        Si la entrega anterior era acción pura en masacrar demonios; con Eternal esto sube de nivel. Más armas, más combos, más enemigos cuales derrotar y aniquilar. Doom Eternal es la experiencia perfecta para desquitarte con demonios; poner música de fondo y relajarte.
+      </p>
+    </div>
+  </div>
+  </div>
+  <div className='archivos'>
+  <div className='fila-archivo'>
+    <img className='img-archivo-mediana' src={archivo8} alt="gears" />
+    <div className='contenido-archivo'>
+      <h2>Gears of War 4</h2>
+      <p className="stats-archivo">XBox | 40 hrs | ⭐ 7/10</p>
+      <p className="descripcion-corta">
+        Honestamente nunca jugue un Gears of War; este fue el primero que me introdujo a la saga. Pero hasta cierto punto lo disfrute y entendí porque a muchos les gusta. Falta jugar los demás titulos pero con algo se empieza.
+      </p>
+    </div>
+  </div>
+  </div>
+  <div className='archivos'>
+  <div className='fila-archivo'>
+    <img className='img-archivo-mediana' src={platino4} alt="Spiderman" />
+    <div className='contenido-archivo'>
+      <h2>Marvel's Spider-Man PS4 <img className='platino' src={platino} alt="platino PS" /></h2>
+      <p className="stats-archivo">PS4 | 70 hrs | ⭐ 9/10</p>
+      <p className="descripcion-corta">
+        Uno de los mejores juegos de Spiderman. El juego que principalmente fue el motivo por el cual quise adquirir una PS4. Al ser mi superheroe favorito obvio disfrute mucho este juego, hasta sacarle su platino.
+      </p>
+    </div>
+  </div>
+  </div>
+  <div className='archivos'>
+  <div className='fila-archivo'>
+    <img className='img-archivo-mediana' src={archivo9} alt="Minecraft" />
+    <div className='contenido-archivo'>
+      <h2>Minecraft</h2>
+      <p className="stats-archivo">PC-Xbox-PS-Movil | ∞ hrs | ⭐ ∞/10</p>
+      <p className="descripcion-corta">
+        Este juego no necesita presentación ni nada por el estilo. Este juego uno de los más importantes para muchos en nustros momentos más complicados; un pequeño escape de la realidad y por más que lo dejemos, volvemos a el.
+      </p>
+    </div>
+  </div>
+  </div>
+  <div className='archivos'>
+  <div className='fila-archivo'>
+    <img className='img-archivo-mediana' src={archivo10} alt="Ocarina" />
+    <div className='contenido-archivo'>
+      <h2>The Legend of Zelda: Ocarina of Time</h2>
+      <p className="stats-archivo">Nintendo 3DS | 30 hrs | ⭐ 9/10</p>
+      <p className="descripcion-corta">
+        The Legend of Zelda es otro ejemplo de juego que me llamaron la atención, pero por sus puzzles no me atrevia a jugar. Pero al adquirir una Nintendo 3DS y ver que tenia el Ocarina of Time, decidí darle una oportunidad. Y la verdad que no me arrepiento, no digo que soy hasta la muerta, porque aún me falta saber más cosas y jugar más juegos, pero me gusto que segui jugando otros juegos. Unos terminados y otros no. 
+      </p>
+    </div>
+  </div>
+  </div>
+  <div className='archivos'>
+  <div className='fila-archivo'>
+    <img className='img-archivo-mediana' src={archivo11} alt="Breath" />
+    <div className='contenido-archivo'>
+      <h2>The Legend of Zelda: Breath of the Wild</h2>
+      <p className="stats-archivo">Nintendo Swtich | 60 hrs | ⭐ 8.5/10</p>
+      <p className="descripcion-corta">
+        Recuedan que les dije que seguí jugando juegos de la saga de The Legend of Zelda. Bueno pues este fue el siguiente, y la verdad lo disfrute tanto que resolvi todos los santuarios, solo me faltaron las 900 semillas kolog. Pero eso si es mucho; me gustan los juegos de mundo abierto, y por eso entre en este. Pero tampoco exagenren.
+      </p>
+    </div>
+  </div>
+  </div>
+  <div className='archivos'>
+  <div className='fila-archivo'>
+    <img className='img-archivo-mediana' src={archivo12} alt="Resident Evil 4" />
+    <div className='contenido-archivo'>
+      <h2>Resident Evil 4</h2>
+      <p className="stats-archivo">PS4 | 30 hrs | ⭐ 9/10</p>
+      <p className="descripcion-corta">
+        En si este fue el primer Resident Evil que jugue y termine. Lo conocí por videos y amigos que lo tenian, y lo jugaba de vez en cuando pero no le entendia mucho porque estaba avanzado. Pero por fin hace poco lo pude comprar, jugar y divertirme. Eso si, se siente raro jugarlo a como estamos acostumbrados a jugar juegos actualmente pero eso no le quite que sigue siendo disfritable.
+      </p>
+    </div>
+  </div>
+  </div>
+  <div className='archivos'>
+  <div className='fila-archivo'>
+    <img className='img-archivo-mediana' src={archivo13} alt="Olympus" />
+    <div className='contenido-archivo'>
+      <h2>God of War Chains of Olympus</h2>
+      <p className="stats-archivo">PSP | ∞ hrs | ⭐ 8/10</p>
+      <p className="descripcion-corta">
+        Este es uno de los pocos God of War que he tocado. La PSP fue mi consola favorita, y la verdad me prestaron el juego por mucho tiempo; no se cuanto tiempo le inverti a este juego. Pero si recuerdo jugarlo más de una vez, hasta en su dificultad maxima. Y también como todo niño, no sabia que se podia mejorar y hay me vez batallando con los enemigos.
+      </p>
+    </div>
+  </div>
+  </div>
+  <div className='archivos'>
+  <div className='fila-archivo'>
+    <img className='img-archivo-mediana' src={archivo14} alt="Olympus" />
+    <div className='contenido-archivo'>
+      <h2>God of War Ghost of Sparta</h2>
+      <p className="stats-archivo">PSP | ∞ hrs | ⭐ 8/10</p>
+      <p className="descripcion-corta">
+        Es exactamente lo mismo que con el juego anterior, horas que le inverti y jugando más de una vez. La unica diferencia es que aquí si aprendi a que se podia mejorar las habilidades.
+      </p>
+    </div>
+  </div>
+  </div>
 </>);
-const ProyectosPage = () => <div className='ventana-proyectos'> <h2 className='info'>Futuros proyectos y en desarrollo</h2></div>;
+const ProyectosPage = () => <div className='ventana-proyectos'> <h2 className='info'>Futuros proyectos, en desarrollo y terminados</h2></div>;
 const clickAudio = new Audio(clickSound);
 clickAudio.preload = "auto";
 clickAudio.volume = 0.5;
