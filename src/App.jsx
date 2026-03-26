@@ -254,306 +254,239 @@ const PlatinosPage = () => (<> <div className='ventana-platino'> <h2 className='
       Lo jugué originalmente en 2022, pero lo abandoné. Al regresar a PS4, tuve que empezar de cero porque había formateado la consola, pero fue lo mejor: <strong>me adapté al parry</strong>, mejoré mi esquive y logré sacar un platino que jamás pensé tener junto a los demás.</p>
   </div>
 </>);
-const JuegosPage = () => (<> <div className='ventana-juegos'> <h2 className='info'>Juegos que he jugado</h2></div>
-  <div className='salon'> <p>Salón de la fama</p> </div>
-  <div className='salon-fama-card'>
-    <div className='fila-superior'>
-      <h2 className='persona3'>Persona 3 Reload</h2>
-      <img className='img-fama1' src={fama1} alt="Persona 3 Reload" />
-      <table className='tabla-fama'>
-        <tbody>
-          <tr>
-            <td className='datos-fama1'>Impacto personal:</td>
-            <td className='datos-fama2'>10/10</td>
-          </tr>
-          <tr>
-            <td className='datos-fama1'>Personaje favorito:</td>
-            <td className='datos-fama2'>Makoto Yuki</td>
-          </tr>
-          <tr>
-            <td className='datos-fama1'>Momento inolvidable:</td>
-            <td className='datos-fama2'>La batalla final contra Nyx</td>
-          </tr>
-          <tr>
-            <td className='datos-fama1'>Estado:</td>
-            <td className='datos-fama2'>Completado</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p className='text-fama'>Persona 3 Reload no es un juego más; es una obra que cambió mi perspectiva sobre los RPG por turnos y sobre la vida misma. Antes pensaba que este género era 'malo' o aburrido, hasta que llegó esta joya.
-      <br />
-      Me hizo apreciar más el tiempo y a la gente que me importa. En el juego podemos rebobinar, pero en la realidad cada decisión cuenta y es lo que nos define. No importa si sientes que empiezas solo esta aventura llamada vida; el juego te enseña que siempre hay personas con las que puedes conectar para enfrentar juntos las sombras. Si alguna vez juzgaste los RPG sin probarlos, piénsalo dos veces: a veces, lo que crees 'aburrido' puede cambiarte la vida.
-    </p>
-  </div>
-  <div className='salon-fama-card'>
-    <div className='fila-superior'>
-      <h2 className='blackflag'>Assassin's Creed IV Black Flag</h2>
-      <img className='img-fama2' src={fama2} alt="" />
-      <table className='tabla-fama'>
-        <tbody>
-          <tr>
-            <td className='datos-fama1-blackflag'>Impacto personal:</td>
-            <td className='datos-fama2-blackflag'>10/10</td>
-          </tr>
-          <tr>
-            <td className='datos-fama1-blackflag'>Personaje favorito:</td>
-            <td className='datos-fama2-blackflag'>Edward Kendway</td>
-          </tr>
-          <tr>
-            <td className='datos-fama1-blackflag'>Momento inolvidable:</td>
-            <td className='datos-fama2-blackflag'>La redención de Edward</td>
-          </tr>
-          <tr>
-            <td className='datos-fama1-blackflag'>Estado:</td>
-            <td className='datos-fama2-blackflag'>Completado</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p className='text-fama'>Assassin's Creed es una saga muy importante para mí; es mi favorita de videojuegos. Cuando salió Assassin's Creed IV: Black Flag no pude jugarlo en su momento. Lo probé gracias a un amigo en Xbox 360, pero solo fue un rato. Fue hasta que lo compré en PS4 cuando por fin pude disfrutarlo como se debía. Incluso quise sacarle el platino, pero no se pudo por el multijugador.
-      <br />
-      Sinceramente, no le veía el sentido a la cuarta entrega y mucho menos al personaje de Edward, pero cuando lo jugué, me di cuenta de por qué muchos lo tienen incluso por encima de Ezio Auditore. Todos hablan de la redención de Arthur Morgan, pero Edward Kenway nos enseña que, si tus errores no se atienden, pueden cobrar facturas muy altas... pero al mismo tiempo, puedes aprender de ellos y cambiar tanto por ti, como por la gente que amas.
-    </p>
-  </div>
-  <div className='salon-fama-card'>
-    <div className='fila-superior'>
-      <h2 className='titanfall'>TitanFall 2</h2>
-      <img className='img-fama3' src={fama3} alt="TitanFall 2" />
-      <table className='tabla-fama'>
-        <tbody>
-          <tr>
-            <td className='datos-fama1-titanfall'>Impacto personal:</td>
-            <td className='datos-fama2-titanfall'>10/10</td>
-          </tr>
-          <tr>
-            <td className='datos-fama1-titanfall'>Personaje favorito:</td>
-            <td className='datos-fama2-titanfall'>BT</td>
-          </tr>
-          <tr>
-            <td className='datos-fama1-titanfall'>Momento inolvidable:</td>
-            <td className='datos-fama2-titanfall'>El sacrificio de BT</td>
-          </tr>
-          <tr>
-            <td className='datos-fama1-titanfall'>Estado:</td>
-            <td className='datos-fama2-titanfall'>Completado</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p className='text-fama'>
-      Titanfall 2 es un juego al que no le tenía mucha esperanza; pensé que sería un Call of Duty más futurista que Black Ops 3 o Infinite Warfare, pero me cerraron la boca con guante blanco.
-      <br />
-      No esperaba encariñarme tanto con un robot como BT. Pensé que sería el típico alivio cómico, pero la relación entre Jack, BT y el jugador se volvió inquebrantable. A veces los humanos somos egoístas y abandonamos a los demás por beneficio propio, pero BT demostró ser más humano que cualquiera: él protegió a Jack aun sabiendo que Jack se quedaría con él hasta el final. BT cumplió el Protocolo 3 hasta el último aliento.
-    </p>
-  </div>
-  <div className='archivo'><p>Archivos De Partidas</p></div>
+const ArchivosJuegos = ({ imagen, titulo, stats, descripcion, platinoIcon }) => (<>
   <div className='archivos'>
     <div className='fila-archivo'>
-      <img className='img-archivo-mediana' src={archivo1} alt="Dying Light" />
+      <img className='img-archivo-media' src={imagen} alt={titulo} />
       <div className='contenido-archivo'>
-        <h2>Dying Light</h2>
-        <p className="stats-archivo">PC | 140 hrs | ⭐ 8/10</p>
-        <p className="descripcion-corta">
-          Sobrevivir en Harran fue una de las mejores experiencias de parkour que he tenido.
-          La adrenalina de la noche no se compara con nada.
-        </p>
+        <h2>
+          {titulo} {platinoIcon && <img className='platino' src={platinoIcon} alt={titulo} />}
+        </h2>
+        <p className='stats-archivo'>{stats}</p>
+        <p className='descripcion-corta'>{descripcion}</p>
       </div>
     </div>
-  </div>
-  <div className='archivos'>
-    <div className='fila-archivo'>
-      <img className='img-archivo-mediana' src={archivo2} alt="Slender The arrival" />
-      <div className='contenido-archivo'>
-        <h2>Slender The Arrival</h2>
-        <p className="stats-archivo">PC | 13 hrs | ⭐ 7/10</p>
-        <p className="descripcion-corta">
-          Una experiencia de terror con uno de los mejores iconos del terror para la gente de internet. El modo historia de Slenderman un juego que recomiendo mucho provar; y más con la actualización que obtuvo hace poco.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div className='archivos'>
-  <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={archivo3} alt="the forest" />
-    <div className='contenido-archivo'>
-      <h2>The Forest</h2>
-      <p className="stats-archivo">PC | 65 hrs | ⭐ 7/10</p>
-      <p className="descripcion-corta">
-        Una experiencia de terror, supervivencia y lo más importante divertirse con amigos. Puede que el juego este algo viejo, y tenga una mala optimización pero eso no quita las risas que puedes tener.
-      </p>
-    </div>
-  </div>
-  </div>
-  <div className='archivos'>
-  <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={archivo4} alt="assassins creed" />
-    <div className='contenido-archivo'>
-      <h2>Assassin's Creed Odyssey</h2>
-      <p className="stats-archivo">Xbox | 90 hrs | ⭐ 8/10</p>
-      <p className="descripcion-corta">
-        Tal vez deje mucho que desear como Assassin's Creed; pero el sistema RPG fue mejorado mucho más que su antesesor. Si quieres una experiencia RPG, con diversas habilidades y farmeo de niveles. Es uno de los mejores que puedes probar.
-      </p>
-    </div>
-  </div>
-  </div>
-  <div className='archivos'>
-  <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={platino8} alt="Star Wars" />
-    <div className='contenido-archivo'>
-      <h2>Star Wars Jedi Fallen Order <img className='platino' src={platino} alt="platino PS" /></h2>
-      <p className="stats-archivo">PS4 | 40 hrs | ⭐ 8.5/10</p>
-      <p className="descripcion-corta">
-        Una de las mejores experiencias de Star Wars. Una aventura tipo SoulsLike, planetas por explorar y diferentes enemigos y jefes que puedes derrotar.
-      </p>
-    </div>
-  </div>
-  </div>
-  <div className='archivos'>
-  <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={platino1} alt="Resindet Evil" />
-    <div className='contenido-archivo'>
-      <h2>Resident Evil 2 Remake <img className='platino' src={platino} alt="platino PS" /></h2>
-      <p className="stats-archivo">PS4 | 40 hrs | ⭐ 9/10</p>
-      <p className="descripcion-corta">
-        Una de las mejores experiencias del Survival Horror. Un juego que deje abandonado más de una vez; pero que al final me encanto tanto que hasta platino se saco.
-      </p>
-    </div>
-  </div>
-  </div>
-  <div className='archivos'>
-  <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={archivo5} alt="Borderlands 2" />
-    <div className='contenido-archivo'>
-      <h2>Borderlands 2</h2>
-      <p className="stats-archivo">PC | 50 hrs | ⭐ 8/10</p>
-      <p className="descripcion-corta">
-        Un juego que al igual que RE 2 deje abandonado muchas veces, y casi siempre jugaba con un amigo. Pero después de terminalo y seguir jugando; consiguiendo armas y subiendo de nivel, me empezo a gustar más de lo que esperaba.
-      </p>
-    </div>
-  </div>
-  </div>
-  <div className='archivos'>
-  <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={archivo6} alt="Doom" />
-    <div className='contenido-archivo'>
-      <h2>DOOM 2016</h2>
-      <p className="stats-archivo">PC | 50 hrs | ⭐ 8/10</p>
-      <p className="descripcion-corta">
-        Un de los mejores shooters regreso para tomar otra vez su trono. Un juego que me llamo la atención la primera que lo vi; el frenetismo que sientes al destruir las hordas de demonios que vienen. Si buscas un juego el cual puedas desquitarte, este es el indicado para ti.
-      </p>
-    </div>
-  </div>
-  </div>
-  <div className='archivos'>
-  <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={archivo7} alt="Doom Eternal" />
-    <div className='contenido-archivo'>
-      <h2>DOOM Eternal</h2>
-      <p className="stats-archivo">PC | 70 hrs | ⭐ 9/10</p>
-      <p className="descripcion-corta">
-        Si la entrega anterior era acción pura en masacrar demonios; con Eternal esto sube de nivel. Más armas, más combos, más enemigos cuales derrotar y aniquilar. Doom Eternal es la experiencia perfecta para desquitarte con demonios; poner música de fondo y relajarte.
-      </p>
-    </div>
-  </div>
-  </div>
-  <div className='archivos'>
-  <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={archivo8} alt="gears" />
-    <div className='contenido-archivo'>
-      <h2>Gears of War 4</h2>
-      <p className="stats-archivo">XBox | 40 hrs | ⭐ 7/10</p>
-      <p className="descripcion-corta">
-        Honestamente nunca jugue un Gears of War; este fue el primero que me introdujo a la saga. Pero hasta cierto punto lo disfrute y entendí porque a muchos les gusta. Falta jugar los demás titulos pero con algo se empieza.
-      </p>
-    </div>
-  </div>
-  </div>
-  <div className='archivos'>
-  <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={platino4} alt="Spiderman" />
-    <div className='contenido-archivo'>
-      <h2>Marvel's Spider-Man PS4 <img className='platino' src={platino} alt="platino PS" /></h2>
-      <p className="stats-archivo">PS4 | 70 hrs | ⭐ 9/10</p>
-      <p className="descripcion-corta">
-        Uno de los mejores juegos de Spiderman. El juego que principalmente fue el motivo por el cual quise adquirir una PS4. Al ser mi superheroe favorito obvio disfrute mucho este juego, hasta sacarle su platino.
-      </p>
-    </div>
-  </div>
-  </div>
-  <div className='archivos'>
-  <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={archivo9} alt="Minecraft" />
-    <div className='contenido-archivo'>
-      <h2>Minecraft</h2>
-      <p className="stats-archivo">PC-Xbox-PS-Movil | ∞ hrs | ⭐ ∞/10</p>
-      <p className="descripcion-corta">
-        Este juego no necesita presentación ni nada por el estilo. Este juego uno de los más importantes para muchos en nustros momentos más complicados; un pequeño escape de la realidad y por más que lo dejemos, volvemos a el.
-      </p>
-    </div>
-  </div>
-  </div>
-  <div className='archivos'>
-  <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={archivo10} alt="Ocarina" />
-    <div className='contenido-archivo'>
-      <h2>The Legend of Zelda: Ocarina of Time</h2>
-      <p className="stats-archivo">Nintendo 3DS | 30 hrs | ⭐ 9/10</p>
-      <p className="descripcion-corta">
-        The Legend of Zelda es otro ejemplo de juego que me llamaron la atención, pero por sus puzzles no me atrevia a jugar. Pero al adquirir una Nintendo 3DS y ver que tenia el Ocarina of Time, decidí darle una oportunidad. Y la verdad que no me arrepiento, no digo que soy hasta la muerta, porque aún me falta saber más cosas y jugar más juegos, pero me gusto que segui jugando otros juegos. Unos terminados y otros no. 
-      </p>
-    </div>
-  </div>
-  </div>
-  <div className='archivos'>
-  <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={archivo11} alt="Breath" />
-    <div className='contenido-archivo'>
-      <h2>The Legend of Zelda: Breath of the Wild</h2>
-      <p className="stats-archivo">Nintendo Swtich | 60 hrs | ⭐ 8.5/10</p>
-      <p className="descripcion-corta">
-        Recuedan que les dije que seguí jugando juegos de la saga de The Legend of Zelda. Bueno pues este fue el siguiente, y la verdad lo disfrute tanto que resolvi todos los santuarios, solo me faltaron las 900 semillas kolog. Pero eso si es mucho; me gustan los juegos de mundo abierto, y por eso entre en este. Pero tampoco exagenren.
-      </p>
-    </div>
-  </div>
-  </div>
-  <div className='archivos'>
-  <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={archivo12} alt="Resident Evil 4" />
-    <div className='contenido-archivo'>
-      <h2>Resident Evil 4</h2>
-      <p className="stats-archivo">PS4 | 30 hrs | ⭐ 9/10</p>
-      <p className="descripcion-corta">
-        En si este fue el primer Resident Evil que jugue y termine. Lo conocí por videos y amigos que lo tenian, y lo jugaba de vez en cuando pero no le entendia mucho porque estaba avanzado. Pero por fin hace poco lo pude comprar, jugar y divertirme. Eso si, se siente raro jugarlo a como estamos acostumbrados a jugar juegos actualmente pero eso no le quite que sigue siendo disfritable.
-      </p>
-    </div>
-  </div>
-  </div>
-  <div className='archivos'>
-  <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={archivo13} alt="Olympus" />
-    <div className='contenido-archivo'>
-      <h2>God of War Chains of Olympus</h2>
-      <p className="stats-archivo">PSP | ∞ hrs | ⭐ 8/10</p>
-      <p className="descripcion-corta">
-        Este es uno de los pocos God of War que he tocado. La PSP fue mi consola favorita, y la verdad me prestaron el juego por mucho tiempo; no se cuanto tiempo le inverti a este juego. Pero si recuerdo jugarlo más de una vez, hasta en su dificultad maxima. Y también como todo niño, no sabia que se podia mejorar y hay me vez batallando con los enemigos.
-      </p>
-    </div>
-  </div>
-  </div>
-  <div className='archivos'>
-  <div className='fila-archivo'>
-    <img className='img-archivo-mediana' src={archivo14} alt="Olympus" />
-    <div className='contenido-archivo'>
-      <h2>God of War Ghost of Sparta</h2>
-      <p className="stats-archivo">PSP | ∞ hrs | ⭐ 8/10</p>
-      <p className="descripcion-corta">
-        Es exactamente lo mismo que con el juego anterior, horas que le inverti y jugando más de una vez. La unica diferencia es que aquí si aprendi a que se podia mejorar las habilidades.
-      </p>
-    </div>
-  </div>
   </div>
 </>);
+const JuegosPage = () => (
+  <> <div className='ventana-juegos'> <h2 className='info'>Juegos que he jugado</h2></div>
+    <div className='salon'> <p>Salón de la fama</p> </div>
+    <div className='salon-fama-card'>
+      <div className='fila-superior'>
+        <h2 className='persona3'>Persona 3 Reload</h2>
+        <img className='img-fama1' src={fama1} alt="Persona 3 Reload" />
+        <table className='tabla-fama'>
+          <tbody>
+            <tr>
+              <td className='datos-fama1'>Impacto personal:</td>
+              <td className='datos-fama2'>10/10</td>
+            </tr>
+            <tr>
+              <td className='datos-fama1'>Personaje favorito:</td>
+              <td className='datos-fama2'>Makoto Yuki</td>
+            </tr>
+            <tr>
+              <td className='datos-fama1'>Momento inolvidable:</td>
+              <td className='datos-fama2'>La batalla final contra Nyx</td>
+            </tr>
+            <tr>
+              <td className='datos-fama1'>Estado:</td>
+              <td className='datos-fama2'>Completado</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p className='text-fama'>Persona 3 Reload no es un juego más; es una obra que cambió mi perspectiva sobre los RPG por turnos y sobre la vida misma. Antes pensaba que este género era 'malo' o aburrido, hasta que llegó esta joya.
+        <br />
+        Me hizo apreciar más el tiempo y a la gente que me importa. En el juego podemos rebobinar, pero en la realidad cada decisión cuenta y es lo que nos define. No importa si sientes que empiezas solo esta aventura llamada vida; el juego te enseña que siempre hay personas con las que puedes conectar para enfrentar juntos las sombras. Si alguna vez juzgaste los RPG sin probarlos, piénsalo dos veces: a veces, lo que crees 'aburrido' puede cambiarte la vida.
+      </p>
+    </div>
+    <div className='salon-fama-card'>
+      <div className='fila-superior'>
+        <h2 className='blackflag'>Assassin's Creed IV Black Flag</h2>
+        <img className='img-fama2' src={fama2} alt="" />
+        <table className='tabla-fama'>
+          <tbody>
+            <tr>
+              <td className='datos-fama1-blackflag'>Impacto personal:</td>
+              <td className='datos-fama2-blackflag'>10/10</td>
+            </tr>
+            <tr>
+              <td className='datos-fama1-blackflag'>Personaje favorito:</td>
+              <td className='datos-fama2-blackflag'>Edward Kendway</td>
+            </tr>
+            <tr>
+              <td className='datos-fama1-blackflag'>Momento inolvidable:</td>
+              <td className='datos-fama2-blackflag'>La redención de Edward</td>
+            </tr>
+            <tr>
+              <td className='datos-fama1-blackflag'>Estado:</td>
+              <td className='datos-fama2-blackflag'>Completado</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p className='text-fama'>Assassin's Creed es una saga muy importante para mí; es mi favorita de videojuegos. Cuando salió Assassin's Creed IV: Black Flag no pude jugarlo en su momento. Lo probé gracias a un amigo en Xbox 360, pero solo fue un rato. Fue hasta que lo compré en PS4 cuando por fin pude disfrutarlo como se debía. Incluso quise sacarle el platino, pero no se pudo por el multijugador.
+        <br />
+        Sinceramente, no le veía el sentido a la cuarta entrega y mucho menos al personaje de Edward, pero cuando lo jugué, me di cuenta de por qué muchos lo tienen incluso por encima de Ezio Auditore. Todos hablan de la redención de Arthur Morgan, pero Edward Kenway nos enseña que, si tus errores no se atienden, pueden cobrar facturas muy altas... pero al mismo tiempo, puedes aprender de ellos y cambiar tanto por ti, como por la gente que amas.
+      </p>
+    </div>
+    <div className='salon-fama-card'>
+      <div className='fila-superior'>
+        <h2 className='titanfall'>TitanFall 2</h2>
+        <img className='img-fama3' src={fama3} alt="TitanFall 2" />
+        <table className='tabla-fama'>
+          <tbody>
+            <tr>
+              <td className='datos-fama1-titanfall'>Impacto personal:</td>
+              <td className='datos-fama2-titanfall'>10/10</td>
+            </tr>
+            <tr>
+              <td className='datos-fama1-titanfall'>Personaje favorito:</td>
+              <td className='datos-fama2-titanfall'>BT</td>
+            </tr>
+            <tr>
+              <td className='datos-fama1-titanfall'>Momento inolvidable:</td>
+              <td className='datos-fama2-titanfall'>El sacrificio de BT</td>
+            </tr>
+            <tr>
+              <td className='datos-fama1-titanfall'>Estado:</td>
+              <td className='datos-fama2-titanfall'>Completado</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p className='text-fama'>
+        Titanfall 2 es un juego al que no le tenía mucha esperanza; pensé que sería un Call of Duty más futurista que Black Ops 3 o Infinite Warfare, pero me cerraron la boca con guante blanco.
+        <br />
+        No esperaba encariñarme tanto con un robot como BT. Pensé que sería el típico alivio cómico, pero la relación entre Jack, BT y el jugador se volvió inquebrantable. A veces los humanos somos egoístas y abandonamos a los demás por beneficio propio, pero BT demostró ser más humano que cualquiera: él protegió a Jack aun sabiendo que Jack se quedaría con él hasta el final. BT cumplió el Protocolo 3 hasta el último aliento.
+      </p>
+    </div>
+    <div className='archivo'><p>Archivos De Partidas</p></div>
+
+    <ArchivosJuegos 
+      imagen={archivo1} 
+      titulo="Dying Light" 
+      stats="PC | 140 hrs | ⭐ 8/10" 
+      descripcion="Una experiencia de terror mezclada con parkour, el cual ta de una adrenalina. Hasta que llega la noche." 
+    />
+
+    <ArchivosJuegos 
+      imagen={archivo2} 
+      titulo="Slender The Arrival" 
+      stats="PC | 13 hrs | ⭐ 7/10" 
+      descripcion="Una experiencia de terror con uno de los mejores iconos del terror para la gente de internet. Un clasico que nunca pasara de moda." 
+    />
+
+    <ArchivosJuegos 
+      imagen={archivo3} 
+      titulo="The Forest" 
+      stats="PC | 65 hrs | ⭐ 7/10" 
+      descripcion="Una experiencia de terror y supervivencia. Puede tener una mala optimización pero la diversión con amigos nunca falta." 
+    />
+
+    <ArchivosJuegos 
+      imagen={archivo4} 
+      titulo="Assassin's Creed Odyssey" 
+      stats="Xbox | 90 hrs | ⭐ 8/10" 
+      descripcion="Tal vez deje mucho que desear como Assassin's Creed; pero si hablamos de el como RPG. Honestamente es mucho mejor que su antecesor." 
+    />
+
+    <ArchivosJuegos 
+      imagen={platino8} 
+      titulo="Star Wars Jedi Fallen Order" 
+      stats="PS4 | 40 hrs | ⭐ 8.5/10" 
+      descripcion="Una de las mejores experiencias de Star Wars mezclado con SoulsLike. La experiencia puede variar depende de la dificultad pero de igual manera, vale mucho la pena."
+      platinoIcon={platino} 
+    />
+
+    <ArchivosJuegos 
+      imagen={platino1} 
+      titulo="Resident Evil 2 Remake" 
+      stats="PS4 | 40 hrs | ⭐ 9/10" 
+      descripcion="Una de las mejores experiencias del Survival Horror. Un juego que deje abandonado más de una vez pero al final termine más de las veces que eran necesarias, hasta contar con su platino." 
+      platinoIcon={platino}
+    />
+
+    <ArchivosJuegos 
+      imagen={archivo5} 
+      titulo="Borderlands 2" 
+      stats="Pc | 50 hrs | ⭐ 8/10" 
+      descripcion="Un juego que al igual que RE 2 deje abandonado muchas veces, y casi siempre jugaba con un amigo. Pero una vez me lo termine, no pude dejar de jugar y querer conseguir las mejores armas del juego." 
+    />
+
+    <ArchivosJuegos 
+      imagen={archivo6} 
+      titulo="DOOM 2016" 
+      stats="Pc | 50 hrs | ⭐ 8/10" 
+      descripcion="Un de los mejores shooters regreso para tomar otra vez su trono. Siempre me llamo la atención cuando se anuncio, ya por fin pude probarlo y es una forma de relajarte con el sountrack y hordas de demononios." 
+    />
+
+    <ArchivosJuegos 
+      imagen={archivo7} 
+      titulo="Doom Eternal" 
+      stats="Pc | 70 hrs | ⭐ 9/10" 
+      descripcion="Si la entrega anterior era acción pura en masacrar demonios; con Eternal esto sube de nivel. Nuevas animaciones, más armas, más demonios los cuales masacrar." 
+    />
+
+    <ArchivosJuegos 
+      imagen={archivo8} 
+      titulo="Gears of War 4" 
+      stats="Xbox | 40 hrs | ⭐ 7/10" 
+      descripcion="Honestamente nunca jugue un Gears of War; este fue el primero que me introdujo a la saga. Y se que no es el mejor por el cual empezar, pero algun día tendre la oportunidad de jugar los demás titulos." 
+    />
+
+    <ArchivosJuegos 
+      imagen={platino4} 
+      titulo="Marvel's Spider-Man PS4" 
+      stats="PS4 | 80 hrs | ⭐ 9/10" 
+      descripcion="Uno de los mejores juegos de Spiderman. El juego que fue el causante por el cual quise adquirir una PS4." 
+      platinoIcon={platino}
+    />
+
+    <ArchivosJuegos 
+      imagen={archivo9} 
+      titulo="Minecraft" 
+      stats="PC-Xbox-PS-Movil | ∞ hrs | ⭐ ∞/10" 
+      descripcion="Este juego no necesita presentación. Muchos le tenemos cariño por ser nuestro escape de la realidad en momentos dificiles." 
+    />
+
+    <ArchivosJuegos 
+      imagen={archivo10} 
+      titulo="The Legend of Zelda: Ocarina of Time" 
+      stats="Nintendo 3DS | 30 hrs | ⭐ 9/10" 
+      descripcion="The Legend of Zelda es otro ejemplo de juego que me llamaron la atención por sus puzzles. Fue el primero que jugue de esta saga y el cual termine, se que no lo jugue en la versión original pero me gusto mucho." 
+    />
+
+    <ArchivosJuegos 
+      imagen={archivo11} 
+      titulo="The Legend of Zelda: Breath of the Wild" 
+      stats="Nintendo Switch | 60 hrs | ⭐ 8.5/10" 
+      descripcion="Lo disfrute tanto que resolvi todos los santuarios, al ser un mundo abierto le di con todo. Menos las 900 semillas de Kolog, esas ni loco las consigo." 
+    />
+
+    <ArchivosJuegos 
+      imagen={archivo12} 
+      titulo="Resident Evil 4" 
+      stats="PS4 | 30 hrs | ⭐ 9/10" 
+      descripcion="En si este fue el primer Resident Evil que jugue y termine. Lo conocí por videos y amigos, los cuales estaban muy avanzados y no entendia mucho el juego. Es algo incomodo al principio por la constumbre que tenemos actualmente pero te acostumbras a la larga." 
+    />
+
+    <ArchivosJuegos 
+      imagen={archivo13} 
+      titulo="God of War Chains of Olympus" 
+      stats="PSP | ∞ hrs | ⭐ 8/10" 
+      descripcion="La PSP fue mi consola favorita. No se cuanto tiempo le inverti a este juego, pero si llegue a jugar tanto. Tanto que ni mejore las habilidades y asi me lo termine." 
+    />
+
+    <ArchivosJuegos 
+      imagen={archivo14} 
+      titulo="God of War Ghost of Sparta" 
+      stats="PSP | ∞ hrs | ⭐ 8/10" 
+      descripcion="Fue casi lo mismo que el anterior. El casi aqui es que si aprendi que se podian mejorar las habilidades." 
+    />
+
+  </>);
 const ProyectosPage = () => <div className='ventana-proyectos'> <h2 className='info'>Futuros proyectos, en desarrollo y terminados</h2></div>;
 const clickAudio = new Audio(clickSound);
 clickAudio.preload = "auto";
