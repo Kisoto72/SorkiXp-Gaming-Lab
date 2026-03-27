@@ -4,17 +4,26 @@
 }
 
 @media (max-width: 768px) {
-  /* Forzamos que nada se salga del ancho de la pantalla */
   * {
     max-width: 100vw;
     box-sizing: border-box;
   }
 
   body {
-    display: block !important; /* Quitamos el flex del body que rompe todo */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
     overflow-x: hidden !important;
     padding: 10px !important;
-    width: 100% !important;
+    min-height: 100vh !important;
+  }
+
+  nav{
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    margin-bottom: 20px !important;
   }
 
   /* Contenedor principal */
@@ -56,14 +65,25 @@
     flex-direction: column; /* El platino irá debajo del nombre si no cabe */
     align-items: center;
     gap: 10px;
+    max-width: none !important;
   }
 
-  /* El icono del platino para que no vuele */
-  .platino {
-    width: 25px !important;
-    height: auto !important;
-    margin-left: 10px !important;
+  .contenido-archivo h2 img{
     display: inline-block !important;
+    vertical-align: middle !important;
+    width: 30px !important;
+    height: auto !important;
+    margin: 0 0 0 10px !important;
+    max-width: none !important;
+    position: static !important;
+  }
+
+  .platino{
+   display: inline-block !important;
+   width: 30px !important;
+   height: auto !important;
+   vertical-align: middle;
+   margin-left: 10px;
   }
 
   .descripcion-corta {

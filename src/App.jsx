@@ -29,6 +29,8 @@ import archivo11 from './assets/archivo11.jpg';
 import archivo12 from './assets/archivo12.jpg';
 import archivo13 from './assets/archivo13.jpg';
 import archivo14 from './assets/archivo14.jpg';
+import archivo15 from './assets/archivo15.jpg';
+import archivo16 from './assets/archivo16.jpg';
 import platino from './assets/platino.png';
 const Home = () => <div className='ventana-inicio'> <h2 className='info'>Este es el inicio de mi pagina, en este intento de pagina web hablare sobre mis juegos platinados y los que platinare en un futuro, sobre los juegos que he jugado, los que abandone y porque. Y sobre futuros proyectos que tenga en mente.</h2> </div>;
 const PlatinosPage = () => (<> <div className='ventana-platino'> <h2 className='info'>Aquí hablo de los platinos que he conseguido</h2></div>
@@ -364,128 +366,157 @@ const JuegosPage = () => (
     </div>
     <div className='archivo'><p>Archivos De Partidas</p></div>
 
-    <ArchivosJuegos 
-      imagen={archivo1} 
-      titulo="Dying Light" 
-      stats="PC | 140 hrs | ⭐ 8/10" 
-      descripcion="Una experiencia de terror mezclada con parkour, el cual ta de una adrenalina. Hasta que llega la noche." 
+    <ArchivosJuegos
+      imagen={archivo1}
+      titulo="Dying Light"
+      stats="PC | 140 hrs | ⭐ 8/10"
+      descripcion="Una experiencia de terror mezclada con parkour, el cual ta de una adrenalina. Hasta que llega la noche."
     />
 
-    <ArchivosJuegos 
-      imagen={archivo2} 
-      titulo="Slender The Arrival" 
-      stats="PC | 13 hrs | ⭐ 7/10" 
-      descripcion="Una experiencia de terror con uno de los mejores iconos del terror para la gente de internet. Un clasico que nunca pasara de moda." 
+    <ArchivosJuegos
+      imagen={archivo2}
+      titulo="Slender The Arrival"
+      stats="PC | 13 hrs | ⭐ 7/10"
+      descripcion="Una experiencia de terror con uno de los mejores iconos del terror para la gente de internet. Un clasico que nunca pasara de moda."
     />
 
-    <ArchivosJuegos 
-      imagen={archivo3} 
-      titulo="The Forest" 
-      stats="PC | 65 hrs | ⭐ 7/10" 
-      descripcion="Una experiencia de terror y supervivencia. Puede tener una mala optimización pero la diversión con amigos nunca falta." 
+    <ArchivosJuegos
+      imagen={archivo3}
+      titulo="The Forest"
+      stats="PC | 65 hrs | ⭐ 7/10"
+      descripcion="Una experiencia de terror y supervivencia. Puede tener una mala optimización pero la diversión con amigos nunca falta."
     />
 
-    <ArchivosJuegos 
-      imagen={archivo4} 
-      titulo="Assassin's Creed Odyssey" 
-      stats="Xbox | 90 hrs | ⭐ 8/10" 
-      descripcion="Tal vez deje mucho que desear como Assassin's Creed; pero si hablamos de el como RPG. Honestamente es mucho mejor que su antecesor." 
+    <ArchivosJuegos
+      imagen={archivo4}
+      titulo="Assassin's Creed Odyssey"
+      stats="Xbox | 90 hrs | ⭐ 8/10"
+      descripcion="Tal vez deje mucho que desear como Assassin's Creed; pero si hablamos de el como RPG. Honestamente es mucho mejor que su antecesor."
     />
 
-    <ArchivosJuegos 
-      imagen={platino8} 
-      titulo="Star Wars Jedi Fallen Order" 
-      stats="PS4 | 40 hrs | ⭐ 8.5/10" 
+    <ArchivosJuegos
+      imagen={platino8}
+      titulo="Star Wars Jedi Fallen Order"
+      stats="PS4 | 40 hrs | ⭐ 8.5/10"
       descripcion="Una de las mejores experiencias de Star Wars mezclado con SoulsLike. La experiencia puede variar depende de la dificultad pero de igual manera, vale mucho la pena."
-      platinoIcon={platino} 
-    />
-
-    <ArchivosJuegos 
-      imagen={platino1} 
-      titulo="Resident Evil 2 Remake" 
-      stats="PS4 | 40 hrs | ⭐ 9/10" 
-      descripcion="Una de las mejores experiencias del Survival Horror. Un juego que deje abandonado más de una vez pero al final termine más de las veces que eran necesarias, hasta contar con su platino." 
       platinoIcon={platino}
     />
 
-    <ArchivosJuegos 
-      imagen={archivo5} 
-      titulo="Borderlands 2" 
-      stats="Pc | 50 hrs | ⭐ 8/10" 
-      descripcion="Un juego que al igual que RE 2 deje abandonado muchas veces, y casi siempre jugaba con un amigo. Pero una vez me lo termine, no pude dejar de jugar y querer conseguir las mejores armas del juego." 
-    />
-
-    <ArchivosJuegos 
-      imagen={archivo6} 
-      titulo="DOOM 2016" 
-      stats="Pc | 50 hrs | ⭐ 8/10" 
-      descripcion="Un de los mejores shooters regreso para tomar otra vez su trono. Siempre me llamo la atención cuando se anuncio, ya por fin pude probarlo y es una forma de relajarte con el sountrack y hordas de demononios." 
-    />
-
-    <ArchivosJuegos 
-      imagen={archivo7} 
-      titulo="Doom Eternal" 
-      stats="Pc | 70 hrs | ⭐ 9/10" 
-      descripcion="Si la entrega anterior era acción pura en masacrar demonios; con Eternal esto sube de nivel. Nuevas animaciones, más armas, más demonios los cuales masacrar." 
-    />
-
-    <ArchivosJuegos 
-      imagen={archivo8} 
-      titulo="Gears of War 4" 
-      stats="Xbox | 40 hrs | ⭐ 7/10" 
-      descripcion="Honestamente nunca jugue un Gears of War; este fue el primero que me introdujo a la saga. Y se que no es el mejor por el cual empezar, pero algun día tendre la oportunidad de jugar los demás titulos." 
-    />
-
-    <ArchivosJuegos 
-      imagen={platino4} 
-      titulo="Marvel's Spider-Man PS4" 
-      stats="PS4 | 80 hrs | ⭐ 9/10" 
-      descripcion="Uno de los mejores juegos de Spiderman. El juego que fue el causante por el cual quise adquirir una PS4." 
+    <ArchivosJuegos
+      imagen={platino1}
+      titulo="Resident Evil 2 Remake"
+      stats="PS4 | 40 hrs | ⭐ 9/10"
+      descripcion="Una de las mejores experiencias del Survival Horror. Un juego que deje abandonado más de una vez pero al final termine más de las veces que eran necesarias, hasta contar con su platino."
       platinoIcon={platino}
     />
 
-    <ArchivosJuegos 
-      imagen={archivo9} 
-      titulo="Minecraft" 
-      stats="PC-Xbox-PS-Movil | ∞ hrs | ⭐ ∞/10" 
-      descripcion="Este juego no necesita presentación. Muchos le tenemos cariño por ser nuestro escape de la realidad en momentos dificiles." 
+    <ArchivosJuegos
+      imagen={archivo5}
+      titulo="Borderlands 2"
+      stats="Pc | 50 hrs | ⭐ 8/10"
+      descripcion="Un juego que al igual que RE 2 deje abandonado muchas veces, y casi siempre jugaba con un amigo. Pero una vez me lo termine, no pude dejar de jugar y querer conseguir las mejores armas del juego."
     />
 
-    <ArchivosJuegos 
-      imagen={archivo10} 
-      titulo="The Legend of Zelda: Ocarina of Time" 
-      stats="Nintendo 3DS | 30 hrs | ⭐ 9/10" 
-      descripcion="The Legend of Zelda es otro ejemplo de juego que me llamaron la atención por sus puzzles. Fue el primero que jugue de esta saga y el cual termine, se que no lo jugue en la versión original pero me gusto mucho." 
+    <ArchivosJuegos
+      imagen={archivo6}
+      titulo="DOOM 2016"
+      stats="Pc | 50 hrs | ⭐ 8/10"
+      descripcion="Un de los mejores shooters regreso para tomar otra vez su trono. Siempre me llamo la atención cuando se anuncio, ya por fin pude probarlo y es una forma de relajarte con el sountrack y hordas de demononios."
     />
 
-    <ArchivosJuegos 
-      imagen={archivo11} 
-      titulo="The Legend of Zelda: Breath of the Wild" 
-      stats="Nintendo Switch | 60 hrs | ⭐ 8.5/10" 
-      descripcion="Lo disfrute tanto que resolvi todos los santuarios, al ser un mundo abierto le di con todo. Menos las 900 semillas de Kolog, esas ni loco las consigo." 
+    <ArchivosJuegos
+      imagen={archivo7}
+      titulo="Doom Eternal"
+      stats="Pc | 70 hrs | ⭐ 9/10"
+      descripcion="Si la entrega anterior era acción pura en masacrar demonios; con Eternal esto sube de nivel. Nuevas animaciones, más armas, más demonios los cuales masacrar."
     />
 
-    <ArchivosJuegos 
-      imagen={archivo12} 
-      titulo="Resident Evil 4" 
-      stats="PS4 | 30 hrs | ⭐ 9/10" 
-      descripcion="En si este fue el primer Resident Evil que jugue y termine. Lo conocí por videos y amigos, los cuales estaban muy avanzados y no entendia mucho el juego. Es algo incomodo al principio por la constumbre que tenemos actualmente pero te acostumbras a la larga." 
+    <ArchivosJuegos
+      imagen={archivo8}
+      titulo="Gears of War 4"
+      stats="Xbox | 40 hrs | ⭐ 7/10"
+      descripcion="Honestamente nunca jugue un Gears of War; este fue el primero que me introdujo a la saga. Y se que no es el mejor por el cual empezar, pero algun día tendre la oportunidad de jugar los demás titulos."
     />
 
-    <ArchivosJuegos 
-      imagen={archivo13} 
-      titulo="God of War Chains of Olympus" 
-      stats="PSP | ∞ hrs | ⭐ 8/10" 
-      descripcion="La PSP fue mi consola favorita. No se cuanto tiempo le inverti a este juego, pero si llegue a jugar tanto. Tanto que ni mejore las habilidades y asi me lo termine." 
+    <ArchivosJuegos
+      imagen={platino4}
+      titulo="Marvel's Spider-Man PS4"
+      stats="PS4 | 80 hrs | ⭐ 9/10"
+      descripcion="Uno de los mejores juegos de Spiderman. El juego que fue el causante por el cual quise adquirir una PS4."
+      platinoIcon={platino}
     />
 
-    <ArchivosJuegos 
-      imagen={archivo14} 
-      titulo="God of War Ghost of Sparta" 
-      stats="PSP | ∞ hrs | ⭐ 8/10" 
-      descripcion="Fue casi lo mismo que el anterior. El casi aqui es que si aprendi que se podian mejorar las habilidades." 
+    <ArchivosJuegos
+      imagen={archivo9}
+      titulo="Minecraft"
+      stats="PC-Xbox-PS-Movil | ∞ hrs | ⭐ ∞/10"
+      descripcion="Este juego no necesita presentación. Muchos le tenemos cariño por ser nuestro escape de la realidad en momentos dificiles."
     />
 
+    <ArchivosJuegos
+      imagen={archivo10}
+      titulo="The Legend of Zelda: Ocarina of Time"
+      stats="Nintendo 3DS | 30 hrs | ⭐ 9/10"
+      descripcion="The Legend of Zelda es otro ejemplo de juego que me llamaron la atención por sus puzzles. Fue el primero que jugue de esta saga y el cual termine, se que no lo jugue en la versión original pero me gusto mucho."
+    />
+
+    <ArchivosJuegos
+      imagen={archivo11}
+      titulo="The Legend of Zelda: Breath of the Wild"
+      stats="Nintendo Switch | 60 hrs | ⭐ 8.5/10"
+      descripcion="Lo disfrute tanto que resolvi todos los santuarios, al ser un mundo abierto le di con todo. Menos las 900 semillas de Kolog, esas ni loco las consigo."
+    />
+
+    <ArchivosJuegos
+      imagen={archivo12}
+      titulo="Resident Evil 4"
+      stats="PS4 | 30 hrs | ⭐ 9/10"
+      descripcion="En si este fue el primer Resident Evil que jugue y termine. Lo conocí por videos y amigos, los cuales estaban muy avanzados y no entendia mucho el juego. Es algo incomodo al principio por la constumbre que tenemos actualmente pero te acostumbras a la larga."
+    />
+
+    <ArchivosJuegos
+      imagen={archivo13}
+      titulo="God of War Chains of Olympus"
+      stats="PSP | ∞ hrs | ⭐ 8/10"
+      descripcion="La PSP fue mi consola favorita. No se cuanto tiempo le inverti a este juego, pero si llegue a jugar tanto. Tanto que ni mejore las habilidades y asi me lo termine."
+    />
+
+    <ArchivosJuegos
+      imagen={archivo14}
+      titulo="God of War Ghost of Sparta"
+      stats="PSP | ∞ hrs | ⭐ 8/10"
+      descripcion="Fue casi lo mismo que el anterior. El casi aqui es que si aprendi que se podian mejorar las habilidades."
+    />
+
+    <ArchivosJuegos
+      imagen={archivo15}
+      titulo="Half Life 2"
+      stats="PC | 29 hrs |⭐ 8/10"
+      descripcion="Honestamente, nunca habia jugando un juego de Valve (excepto left 4 dead 2). Y sinceramente half life 2 es un shooter un poco diferente a los demás. Me llego a gustar bastante, que saque todos sus logros. Bueno, eso hasta que vino Valve y junto los logros del EP 1 y EP 2."
+    />
+
+    <ArchivosJuegos
+      imagen={platino5}
+      titulo="Outlast"
+      stats="PC-Xbox-PS4-Switch | ∞ hrs | ⭐ 9/10"
+      descripcion="Puedo decir con mucha confianza que Outlast es mi juego favorito de terror. No por nada lo he comprado casi no en todas las plataformas, y le he sacado el 100 en las que se puede."
+      platinoIcon={platino}
+    />
+
+    <ArchivosJuegos
+      imagen={archivo16}
+      titulo="Outlast Trials"
+      stats="PC | 70 hrs | ⭐ 8/10 "
+      descripcion="Siempre quise probar el tercer titulo de la saga; aun que muchos digan que perdio la escenia. En parte tienen razón, pero al mismo tiempo es buena esta nueva idea que nos ofrecio Red Barrels. Un cooperativo y jugar con amigos mientras sacamos algunos sustos, o nos reimos de las diferentes situaciones."
+    />
+
+    <ArchivosJuegos
+      imagen={platino3}
+      titulo="Marvel's Spider-Man: Miles Morales"
+      stats="PS4 | 60 hrs | ⭐ 8/10"
+      descripcion="Honestamente, no me pareceio tan bueno como su antecesor. Pero como juego de spiderman, esta pasable; y una buena hisotoria de introducción hacia el Spiderman de Miles Molares."
+      platinoIcon={platino}
+    />
   </>);
 const ProyectosPage = () => <div className='ventana-proyectos'> <h2 className='info'>Futuros proyectos, en desarrollo y terminados</h2></div>;
 const clickAudio = new Audio(clickSound);
