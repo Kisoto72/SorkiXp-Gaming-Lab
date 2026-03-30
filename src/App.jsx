@@ -31,6 +31,12 @@ import archivo13 from './assets/archivo13.jpg';
 import archivo14 from './assets/archivo14.jpg';
 import archivo15 from './assets/archivo15.jpg';
 import archivo16 from './assets/archivo16.jpg';
+import archivo17 from './assets/archivo17.jpg';
+import archivo18 from './assets/archivo18.jpg';
+import archivo19 from './assets/archivo19.jpg';
+import archvio20 from './assets/archivo20.jpg';
+import archvio21 from './assets/archivo21.jpg';
+import archivo22 from './assets/archivo22.jpg';
 import platino from './assets/platino.png';
 const Home = () => <div className='ventana-inicio'> <h2 className='info'>Este es el inicio de mi pagina, en este intento de pagina web hablare sobre mis juegos platinados y los que platinare en un futuro, sobre los juegos que he jugado, los que abandone y porque. Y sobre futuros proyectos que tenga en mente.</h2> </div>;
 const PlatinosPage = () => (<> <div className='ventana-platino'> <h2 className='info'>Aquí hablo de los platinos que he conseguido</h2></div>
@@ -517,8 +523,86 @@ const JuegosPage = () => (
       descripcion="Honestamente, no me pareceio tan bueno como su antecesor. Pero como juego de spiderman, esta pasable; y una buena hisotoria de introducción hacia el Spiderman de Miles Molares."
       platinoIcon={platino}
     />
+
+    <ArchivosJuegos
+      imagen={archivo17}
+      titulo="Super Mario Odyssey"
+      stats="Nintendo Switch | 30 hrs | ⭐ 8/10"
+      descripcion="De los primeros Super Mario que me termino. No soy fan de Mario ni nada de eso; pero si me gusto mucho jugar Mario 64. Y jugar este Super Mario, me hizo recordar a esos momentos."
+    />
+
+    <ArchivosJuegos
+      imagen={archivo18}
+      titulo="Ben 10 Alien Force"
+      stats="PSP | ∞ hrs | ⭐ 8.5/10"
+      descripcion="Un juego que marco mucho mi infancia. Tengo muchos recuerdos de haberlo jugado por muchas horas, ya que en aquel tiempo me gustaba mucho Ben 10; actualmente estoy muy desactualizado con la serie. Y aun que fue un buen juego, creo que fue algo corto al presentarnos a los Aliens; acomparación de Alien Force Vilgax Attacks"
+    />
+
+    <ArchivosJuegos
+      imagen={archivo19}
+      titulo="Resistance Retribution"
+      stats="PSP | ∞ hrs | ⭐ 9/10"
+      descripcion="Este es uno de los juegos más infravalorados de PlayStation. No llegue a jugar todos los Resistance; pero me alegra haber probado uno de los mejores de la saga. El lado bueno, es que Sony lo puso para las versiones de PS4 y PS5; asi que tengo otro motivo por el cual jugarlo."
+    />
+
+    <ArchivosJuegos
+      imagen={archvio20}
+      titulo="Medal of Honor Heroes 2"
+      stats="PSP | ∞ hrs | ⭐ 9/10"
+      descripcion="De los mejores Medal of Honor. De los pocos shooters que tenia la PSP; este es uno de los mejores. No he jugado toda la saga de Medal of Honor, pero puedo decir que este entra entre los mejores de la saga."
+    />
+
+    <ArchivosJuegos
+      imagen={archvio21}
+      titulo="Medal of Honor Airborne"
+      stats="Xbox One | 20 hrs | ⭐ 9/10"
+      descripcion="Otro gran juego de esta saga. Puede ser que no sea el mejor valorado o hasta incluso el menos querido, pero para mi fue un juego que tuve la oportunidad de probar hace poco y me encanto."
+    />
+
+    <ArchivosJuegos
+      imagen={archivo22}
+      titulo="Lego Star Wars The Complete Saga"
+      stats="PSP | ∞ hrs | ⭐ 9/10"
+      descripcion="Se que es raro que ponga la plataforma de PSP; sabiendo que este juego nunca salio en PSP. Pero tengo recuerdos de mi infancia cuando tenia 10/11 años que tenia el disco de un amigo de mi hermana, y me vicie mucho que casi desbloqueo todo del juego."
+    />
+
+    <p className='pendientes'>Partidas Pendientes</p>
   </>);
-const ProyectosPage = () => <div className='ventana-proyectos'> <h2 className='info'>Futuros proyectos, en desarrollo y terminados</h2></div>;
+const Videos = ({ url, titulo, descripcion }) => {
+  return (
+    <div className='video-card'>
+      <iframe
+        src={url} t
+        itle={titulo}
+        frameborder="0"
+        allowFullScreen></iframe>
+      <h3>{titulo}</h3>
+      <p>{descripcion}</p>
+    </div>
+  );
+};
+const misVideos = [
+  {
+    url: "https://www.youtube.com/embed/29FbzprjuLY",
+    titulo: "AC Origins: Por qué esta historia me dejó ARENA en los ojos",
+    descripcion: "Un video analisis sobre el videojuego de AC Origins."
+  }
+];
+const ProyectosPage = () => (
+  <> <div className='ventana-proyectos'> <h2 className='info'>Futuros proyectos, en desarrollo y terminados</h2></div>
+
+    <h2 className='info-videos'>Videos Terminados</h2>
+    <div className='contenedor-videos'>
+      {misVideos.map ((video, index) => (
+        <Videos
+        key={index}
+        url={video.url}
+        titulo={video.titulo}
+        descripcion={video.descripcion}
+        />
+    ))}
+    </div>
+  </>);
 const clickAudio = new Audio(clickSound);
 clickAudio.preload = "auto";
 clickAudio.volume = 0.5;
