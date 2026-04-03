@@ -851,7 +851,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 300px;
+  gap: 50px;
   padding: 20px;
 }
 
@@ -890,3 +890,9 @@ h1 {
   border: 2px inset #fff;
 }
 
+.info-videos{
+  font-family: sans-serif;
+  color: #a94898;
+  font-size: 1.7rem;
+  text-shadow: 1px 1px 10px #898888;
+}

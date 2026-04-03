@@ -37,6 +37,7 @@ import archivo19 from './assets/archivo19.jpg';
 import archvio20 from './assets/archivo20.jpg';
 import archvio21 from './assets/archivo21.jpg';
 import archivo22 from './assets/archivo22.jpg';
+import archivo23 from './assets/archivo23.jpg';
 import platino from './assets/platino.png';
 const Home = () => <div className='ventana-inicio'> <h2 className='info'>Este es el inicio de mi pagina, en este intento de pagina web hablare sobre mis juegos platinados y los que platinare en un futuro, sobre los juegos que he jugado, los que abandone y porque. Y sobre futuros proyectos que tenga en mente.</h2> </div>;
 const PlatinosPage = () => (<> <div className='ventana-platino'> <h2 className='info'>Aquí hablo de los platinos que he conseguido</h2></div>
@@ -566,6 +567,12 @@ const JuegosPage = () => (
       descripcion="Se que es raro que ponga la plataforma de PSP; sabiendo que este juego nunca salio en PSP. Pero tengo recuerdos de mi infancia cuando tenia 10/11 años que tenia el disco de un amigo de mi hermana, y me vicie mucho que casi desbloqueo todo del juego."
     />
 
+    <ArchivosJuegos
+    imagen={archivo23}
+    titulo="Resident Evil 7 biohazard"
+    stats="PC | 17 hrs | ⭐ 9/10"
+    descripcion="Me paso igual con RE 2 remake; lo deje multiples veces que la verdad, no pense que podria terminarlo. Pero honestamente, no me arrepiento de haber regresado y terminarlo. Un juego que el terror se siente, los enemigos, y como todo resident evil; el rejugarlo para tener las recompensas es lo que lo hace especial"
+    />
     <p className='pendientes'>Partidas Pendientes</p>
   </>);
 const Videos = ({ url, titulo, descripcion }) => {
@@ -586,6 +593,12 @@ const misVideos = [
     url: "https://www.youtube.com/embed/29FbzprjuLY",
     titulo: "AC Origins: Por qué esta historia me dejó ARENA en los ojos",
     descripcion: "Un video analisis sobre el videojuego de AC Origins."
+  },
+
+  {
+    url: "https://www.youtube.com/embed/rPXUDBpHcY4?si=JaTUiWMKSwonzDrc" ,
+    titulo: "¿Qué tiene que decir un novato sobre Resident Evil 2 Remake?" ,
+    descripcion: "Un video hablando de Resident Evil 2 Remake, siendo un novato en la saga."
   }
 ];
 const ProyectosPage = () => (
