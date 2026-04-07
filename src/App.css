@@ -896,3 +896,30 @@ h1 {
   font-size: 1.7rem;
   text-shadow: 1px 1px 10px #898888;
 }
+
+.pendientes{
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  text-shadow: 0px 1px 10px #ffffff;
+  color: #7f1d7f;
+}
+
+.partidas{
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.partidas:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.img-pendiente{
+  border-radius: 8px;
+  border: 2px solid #ff0055;
+  box-shadow: 0 0 10px #ff0055;
+  width: 400px;
+}
