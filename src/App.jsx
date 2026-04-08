@@ -38,8 +38,11 @@ import archvio20 from './assets/archivo20.jpg';
 import archvio21 from './assets/archivo21.jpg';
 import archivo22 from './assets/archivo22.jpg';
 import archivo23 from './assets/archivo23.jpg';
+import archivo24 from './assets/archivo24.jpg';
 import platino from './assets/platino.png';
 import pendiente1 from './assets/pendiente1.jpg';
+import pendiente2 from './assets/pendiente2.jpg';
+import pendiente3 from './assets/pendiente3.jpg';
 const Home = () => <div className='ventana-inicio'> <h2 className='info'>Este es el inicio de mi pagina, en este intento de pagina web hablare sobre mis juegos platinados y los que platinare en un futuro, sobre los juegos que he jugado, los que abandone y porque. Y sobre futuros proyectos que tenga en mente.</h2> </div>;
 const PlatinosPage = () => (<> <div className='ventana-platino'> <h2 className='info'>Aquí hablo de los platinos que he conseguido</h2></div>
   <div className='platino1'>
@@ -284,11 +287,11 @@ const PartidasPendientes = ({ imagen, titulo, motivo, regresare }) => (<>
       <img className='img-pendiente' src={imagen} alt={titulo} />
       <div className='contenido-pendiente'>
         <h2>
-          {titulo}  
+          {titulo}
         </h2>
 
         <p className='motivo-pendiente'>{motivo}</p>
-        <p className='regreare-corta'>{regresare}</p>
+        <p className='regresare-corta'>{regresare}</p>
       </div>
     </div>
   </div>
@@ -589,13 +592,34 @@ const JuegosPage = () => (
       stats="PC | 17 hrs | ⭐ 9/10"
       descripcion="Me paso igual con RE 2 remake; lo deje multiples veces que la verdad, no pense que podria terminarlo. Pero honestamente, no me arrepiento de haber regresado y terminarlo. Un juego que el terror se siente, los enemigos, y como todo resident evil; el rejugarlo para tener las recompensas es lo que lo hace especial"
     />
+
+    <ArchivosJuegos
+      imagen={archivo24}
+      titulo="Far Cry 3"
+      stats="PC | 20 hrs | ⭐ 8.5/10"
+      descripcion="Como me paso con muchos juegos, este igualmente lo abandone. Me gustan los juegos de mundo abierto; pero Far Cry 3 lo sentia raro, algo diferente a Assassin's Creed. Pero de igual manera una vez que regrese lo disfrute, y hasta me saque risas con algunos momentos."
+    />
     <p className='pendientes'>Partidas Pendientes</p>
 
     <PartidasPendientes
-    imagen={pendiente1}
-    titulo="Red Dead Redemption 2"
-    motivo="Motivo: Un juego algo lento para mi gusto, lo empece porque muchos dicen que es de los mejores juegos de la historia."
-    regresare="Regresare: Si"
+      imagen={pendiente1}
+      titulo="Red Dead Redemption 2"
+      motivo="Motivo: Un juego algo lento para mi gusto, lo empece porque muchos dicen que es de los mejores juegos de la historia."
+      regresare="Regresare: Si"
+    />
+
+    <PartidasPendientes
+    imagen={pendiente2}
+    titulo="God of War 3"
+    motivo="Motivo: Por más que me llamara la atención la saga, por los juegos de PSP. No conecte tanto con el juego, y tomando en cuenta que me lo prestaron, no pude disfrutarlo como se debia"
+    regresare="Regresare: Tal vez"
+    />
+
+    <PartidasPendientes
+    imagen={pendiente3}
+    titulo="BloodBorne"
+    motivo="Motivo: Soy principiante en el genero de los soulslike y me perdi mucho. Además de que por 'accidente' me meti a una zona de mayor nivel que no deberia estar."
+    regresare="Regresare: Tal vez"
     />
   </>);
 const Videos = ({ url, titulo, descripcion }) => {

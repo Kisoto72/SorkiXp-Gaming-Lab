@@ -905,11 +905,18 @@ h1 {
 }
 
 .partidas{
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(45, 45, 45, 0.4);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 20px;
   transition: transform 0.3s ease;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 6px solid #5c025c;
 }
 
 .partidas:hover{
@@ -919,7 +926,41 @@ h1 {
 
 .img-pendiente{
   border-radius: 8px;
-  border: 2px solid #ff0055;
-  box-shadow: 0 0 10px #ff0055;
+  border: 2px solid #a4089a;
+  box-shadow: 0 0 10px #a4089a;
   width: 400px;
+}
+
+.fila-partidas{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contenido-pendiente{
+  padding: 20px;
+  text-align: left;
+  flex: 1;
+}
+.contenido-pendiente h2{
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.motivo-pendiente{
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ccc;
+  margin-bottom: 15px;
+  font-family: sans-serif;
+}
+
+.regresare-corta{
+  font-weight: bold;
+  color: #ccc;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: sans-serif;
 }
